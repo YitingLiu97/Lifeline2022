@@ -306,6 +306,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 631139326762442819, guid: 9edf17e1ea78869408f66695c0c16335, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 41aef507fbf43d64ab56dc0907fe0e95, type: 2}
     - target: {fileID: 3319482862577379429, guid: 9edf17e1ea78869408f66695c0c16335, type: 3}
       propertyPath: m_Name
       value: Bubble
