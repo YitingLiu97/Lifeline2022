@@ -20,6 +20,7 @@ public class RadarChart : BaseMeshEffect
         if (index >= parameters.Length)
             return;
         parameters[index] = parameter;
+        Debug.Log($"parameter is {index}: {parameter}");
         this.graphic.SetVerticesDirty();
     }
 

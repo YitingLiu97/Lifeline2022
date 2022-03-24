@@ -94,7 +94,7 @@ public class Bubble : MonoBehaviour
 
     }
     // should map the age to the timeline and set the transform for the bubble individually     
-
+    // assign that to the position of the bubble in the world 
     void AssignDataToBubble(BubbleData bubbleData, GameObject bubble)
     {
 

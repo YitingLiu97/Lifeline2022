@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997c30b6ae3af06409ae0e7fb6fc4ac8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bubblePrefab: {fileID: 3319482862577379429, guid: 9edf17e1ea78869408f66695c0c16335, type: 3}
+  bubblePrefab: {fileID: 8564745004866457804, guid: 7971496ae0abfa24b9c43b2e5caf16f7, type: 3}
   bubblePrefabs: []
   radarChartPrefabs: []
   currentRadarPrefabs: []
@@ -610,6 +610,10 @@ PrefabInstance:
     - target: {fileID: 2162625958170638740, guid: f09cdc54a115b2248936d3c9d9f824a9, type: 3}
       propertyPath: m_Name
       value: RadarChart
+      objectReference: {fileID: 0}
+    - target: {fileID: 2162625958170638740, guid: f09cdc54a115b2248936d3c9d9f824a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2162625958204085839, guid: f09cdc54a115b2248936d3c9d9f824a9, type: 3}
       propertyPath: m_IsActive

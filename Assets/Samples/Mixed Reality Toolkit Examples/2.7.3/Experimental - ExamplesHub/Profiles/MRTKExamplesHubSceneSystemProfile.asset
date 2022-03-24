@@ -88,7 +88,7 @@ MonoBehaviour:
   - Name: SliderExample
     Path: Assets/Samples/Mixed Reality Toolkit Examples/2.7.3/Demos - UX/Slider/Scenes/SliderExample.unity
     Included: 1
-    BuildIndex: -1
+    BuildIndex: 0
     Tag: Untagged
     Asset: {fileID: 102900000, guid: 086aad2912678d04e968264b2398004b, type: 3}
   - Name: EyeTrackingDemo-02-TargetSelection
