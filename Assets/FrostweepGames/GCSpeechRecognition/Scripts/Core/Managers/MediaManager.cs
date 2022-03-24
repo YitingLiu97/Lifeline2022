@@ -146,8 +146,8 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition
 			}
 
 			sum /= minValue;
-			Debug.Log("last frame is " + sum);
-			return sum;
+/*			Debug.Log("last frame is " + sum);
+*/			return sum;
 		}
 
 		public float GetMaxFrame()

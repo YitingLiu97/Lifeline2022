@@ -1,6 +1,17 @@
 ﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
+
+
+/// <summary>
+/// Collecting user repsonses 
+/// put that in a list 
+/// following questions 
+/// getting the value - sending it to bubble data 
+/// based on mic input - once it is stopped, instantiate the bubble 
+/// </summary>
 
 namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition.Examples
 {
@@ -9,20 +20,7 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition.Examples
         private GCSpeechRecognition _speechRecognition;
         public Text _resultText;
         public string fullSentence;
-
-        //private Image _speechRecognitionState;
-
-        // replace it with other VR buttons
-        /*	private Button _startRecordButton,
-						   _stopRecordButton;*/
-        /*
-				private InputField _commandsInputField;
-
-
-				private Dropdown _languageDropdown;
-
-				private RectTransform _objectForCommand;*/
-
+        public List<string> userResponses; 
         private void Start()
         {
             _speechRecognition = GCSpeechRecognition.Instance;
@@ -35,38 +33,7 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition.Examples
 
             _speechRecognition.EndTalkigEvent += EndTalkigEventHandler;
 
-          //  _resultText = transform.Find("Canvas/Text_Result").GetComponent<Text>();
-
-            /*_startRecordButton = transform.Find("Canvas/Button_StartRecord").GetComponent<Button>();
-			_stopRecordButton = transform.Find("Canvas/Button_StopRecord").GetComponent<Button>();
-
-			_speechRecognitionState = transform.Find("Canvas/Image_RecordState").GetComponent<Image>();
-
-
-			_commandsInputField = transform.Find("Canvas/InputField_Commands").GetComponent<InputField>();
-
-			_languageDropdown = transform.Find("Canvas/Dropdown_Language").GetComponent<Dropdown>();
-
-			_objectForCommand = transform.Find("Canvas/Panel_PointArena/Image_Point").GetComponent<RectTransform>();
-
-			_startRecordButton.onClick.AddListener(StartRecordButtonOnClickHandler);
-			_stopRecordButton.onClick.AddListener(StopRecordButtonOnClickHandler);
-
-			_startRecordButton.interactable = true;
-			_stopRecordButton.interactable = false;
-			_speechRecognitionState.color = Color.yellow;
-
-			_languageDropdown.ClearOptions();*/
-
             _speechRecognition.RequestMicrophonePermission(null);
-
-            /*for (int i = 0; i < Enum.GetNames(typeof(Enumerators.LanguageCode)).Length; i++)
-			{
-				_languageDropdown.options.Add(new Dropdown.OptionData(((Enumerators.LanguageCode)i).Parse()));
-			}
-
-			_languageDropdown.value = _languageDropdown.options.IndexOf(_languageDropdown.options.Find(x => x.text == Enumerators.LanguageCode.en_GB.Parse()));
-*/
 
             // select first microphone device
             if (_speechRecognition.HasConnectedMicrophoneDevices())
@@ -77,23 +44,16 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition.Examples
 
         private void OnDestroy()
         {
-           // _speechRecognition.RecognizeSuccessEvent -= RecognizeSuccessEventHandler;
             _speechRecognition.RecognizeFailedEvent -= RecognizeFailedEventHandler;
-
             _speechRecognition.FinishedRecordEvent -= FinishedRecordEventHandler;
             _speechRecognition.StartedRecordEvent -= StartedRecordEventHandler;
             _speechRecognition.RecordFailedEvent -= RecordFailedEventHandler;
-
             _speechRecognition.EndTalkigEvent -= EndTalkigEventHandler;
         }
 
-        // replace this with other onclick handler in Bina? or collision - sending the boolean 
+        // start record when user starts to talk 
         public void StartRecordButtonOnClickHandler()
         {
-            /*_startRecordButton.interactable = false;
-			_stopRecordButton.interactable = true;
-			_resultText.text = string.Empty;
-*/
             _speechRecognition.StartRecord(true);
 
             Debug.Log("start recording");
@@ -102,8 +62,6 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition.Examples
         // replace this with out of collision, or click of a button, or long pause such as 2-3 seconds of no user input 
         public void StopRecordButtonOnClickHandler()
         {
-            /*_stopRecordButton.interactable = false;
-			_startRecordButton.interactable = true;*/
 
             _speechRecognition.StopRecord();
         }
@@ -111,18 +69,13 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition.Examples
         private void StartedRecordEventHandler()
         {
             //_speechRecognitionState.color = Color.red;
+            Debug.Log("recording started.");
            
         }
 
         private void RecordFailedEventHandler()
         {
-            /*_speechRecognitionState.color = Color.yellow;
-			_resultText.text = "<color=red>Start record Failed. Please check microphone device and try again.</color>";
-
-			_stopRecordButton.interactable = false;
-			_startRecordButton.interactable = true;*/
-
-            Debug.LogWarning("record failed");
+           Debug.LogWarning("record failed");
         }
 
         private void EndTalkigEventHandler(AudioClip clip, float[] raw)
@@ -132,11 +85,7 @@ namespace FrostweepGames.Plugins.GoogleCloud.SpeechRecognition.Examples
 
         private void FinishedRecordEventHandler(AudioClip clip, float[] raw)
         {
-            /*if (_startRecordButton.interactable)
-			{
-				_speechRecognitionState.color = Color.yellow;
-			}*/
-
+          
             if (clip == null)
                 return;
 
