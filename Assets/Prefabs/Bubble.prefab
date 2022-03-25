@@ -457,6 +457,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RadarChart
       objectReference: {fileID: 0}
+    - target: {fileID: 2162625958170638740, guid: f09cdc54a115b2248936d3c9d9f824a9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2162625958850012623, guid: f09cdc54a115b2248936d3c9d9f824a9, type: 3}
       propertyPath: m_TagString
       value: CurrentRadar
