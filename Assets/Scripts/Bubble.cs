@@ -59,8 +59,12 @@ public class Bubble : MonoBehaviour
         {
             abData.bubbleDatas[i].people = AvoidDuplicatesInList(abData.bubbleDatas[i].people);
             abData.bubbleDatas[i].emotions = AvoidDuplicatesInList(abData.bubbleDatas[i].emotions);
-
+            bubblePrefabs[i].transform.Find("Label Canvas/Label").name = abData.bubbleDatas[i].Moment;
+          // bubblePrefabs[i].transform.Find("Label Canvas/Label").GetComponent<TextMeshProUGUI>().text = abData.bubbleDatas[i].Moment;
         }
+
+
+
         //PopulateListForPeopleAndEmotions();
 
         /*       for (int i = 0; i < buttonPrefabs.Count; i++)
@@ -78,6 +82,7 @@ public class Bubble : MonoBehaviour
 
     }
 
+ 
     // randomize the bubble positions 
     // only show category when the ball is clicked/ collided 
 
