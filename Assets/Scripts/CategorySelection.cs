@@ -8,12 +8,16 @@ public class CategorySelection : MonoBehaviour
     public Canvas categorySelection;
     public GameObject peopleGroup, emotionGroup;
     public Button finishedPeople, finishedEmotion;
-
+    public bool deepDive = false;
+    public bool finishedPeopleClicked = false;
+    public bool finishedEmotionClicked = false;
     void Start()
     {
-        categorySelection.gameObject.SetActive(true);
-        peopleGroup.gameObject.SetActive(true);
-        emotionGroup.gameObject.SetActive(false);
+        deepDive = true;
+        finishedPeopleClicked = false;
+        finishedEmotionClicked = false;
+        /*        peopleGroup.gameObject.SetActive(false);
+                emotionGroup.gameObject.SetActive(false);*/
 
     }
 
@@ -30,46 +34,88 @@ public class CategorySelection : MonoBehaviour
 
     public void DeepDiveOnClick()
     {
-        CategorySelectionProcess(categorySelection, peopleGroup, emotionGroup, finishedPeople, finishedEmotion);
+        /*  peopleGroup.SetActive(true);
+          emotionGroup.SetActive(false);*/
+        Debug.Log("deep dive is " + deepDive);
+        deepDive = true;
+        finishedPeopleClicked = false;
+        finishedEmotionClicked = false;
+        /*Debug.Log($"people group is {peopleGroup.name}");
+        Debug.Log($"people parent is {peopleGroup.gameObject.transform.parent.name}");
+        Debug.Log($"emotionGroup is {emotionGroup.name}");
+        Debug.Log("people group enabled is " + peopleGroup.activeSelf);
+        Debug.Log("deep dive is cilcked ");
+*/
+        // CategorySelectionProcess(categorySelection, peopleGroup, emotionGroup, finishedPeople, finishedEmotion);
     }
 
-    public void CategorySelectionProcess(Canvas categorySelection, GameObject peopleGroup, GameObject emotionGroup, Button finishedPeople, Button finishedEmotion)
+    public void FinishedPeopleOnClick()
     {
-        // not showing the category system 
-        categorySelection.gameObject.SetActive(true);
-        peopleGroup.gameObject.SetActive(true);
-        emotionGroup.gameObject.SetActive(false);
+        finishedPeopleClicked = true;
+        finishedEmotionClicked = false;
+        Debug.Log("finished people is cilcked ");
 
-        Debug.Log("category selection "+categorySelection.enabled);
-
-        finishedPeople.onClick.AddListener(() =>
-        {
-            Debug.Log("finished people is cilcked ");
-          //  categorySelection.gameObject.SetActive(true);
-            peopleGroup.gameObject.SetActive(false);
-            emotionGroup.gameObject.SetActive(true);
-        });
-
-
-        finishedEmotion.onClick.AddListener(() =>
-        {
-            Debug.Log("emotion people is cilcked ");
-          /*  peopleGroup.gameObject.SetActive(false);
-            emotionGroup.gameObject.SetActive(false);*/
-            categorySelection.gameObject.SetActive(false); //bubble would show up
-           
-        });
 
     }
+
+    public void FinishedEmotionOnClick()
+    {
+        finishedEmotionClicked = true;
+
+
+        Debug.Log("emotion people is cilcked ");
+
+    }
+
+
 
     private void OnDestroy()
     {
-        categorySelection.gameObject.SetActive(false);
-        peopleGroup.gameObject.SetActive(false);
-        emotionGroup.gameObject.SetActive(false);
+        // problem with this one 
+        deepDive = true;
+        finishedPeopleClicked = false;
+        finishedEmotionClicked = false;
+
     }
     void Update()
     {
+
+        if (deepDive)
+        {
+            peopleGroup.SetActive(true);
+            emotionGroup.SetActive(false);
+
+            if (finishedPeopleClicked)
+            {
+                peopleGroup.SetActive(false);
+                emotionGroup.SetActive(true);
+
+            }
+            else
+            {
+
+                peopleGroup.gameObject.SetActive(true);
+                emotionGroup.gameObject.SetActive(false);
+            }
+
+            if (finishedEmotionClicked)
+            {
+                peopleGroup.gameObject.SetActive(false);
+                emotionGroup.gameObject.SetActive(false);
+
+            }
+        }
+        else
+        {
+
+            peopleGroup.gameObject.SetActive(false);
+            emotionGroup.gameObject.SetActive(false);
+
+
+        }
+
+
+
 
     }
 }

@@ -317,6 +317,9 @@ MonoBehaviour:
   emotionGroup: {fileID: 961481231398380670}
   finishedPeople: {fileID: 5044590497241150029}
   finishedEmotion: {fileID: 943932698022883515}
+  deepDive: 0
+  finishedPeopleClicked: 0
+  finishedEmotionClicked: 0
 --- !u!1 &961481231398380670
 GameObject:
   m_ObjectHideFlags: 0
@@ -1864,23 +1867,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6322262699922658555}
         m_TargetAssemblyTypeName: CategorySelection, Assembly-CSharp
-        m_MethodName: DeepDiveOnClick
+        m_MethodName: FinishedPeopleOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2674,7 +2665,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 6322262699922658555}
         m_TargetAssemblyTypeName: CategorySelection, Assembly-CSharp
-        m_MethodName: DeepDiveOnClick
+        m_MethodName: FinishedEmotionOnClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2683,7 +2674,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
-        m_CallState: 0
+        m_CallState: 2
 --- !u!1 &7521112184790019658
 GameObject:
   m_ObjectHideFlags: 0

@@ -113,7 +113,7 @@ public class Bubble : MonoBehaviour
             List<string> theEmotions = abData.bubbleDatas[i].emotions;
 
             //find out the parent name or the button name 
-            Debug.Log($"button name is {button.name}, bubble string is {bubbleString}, parent name is {parentName}");
+           //Debug.Log($"button name is {button.name}, bubble string is {bubbleString}, parent name is {parentName}");
 
             if (parentName.Contains(bubbleString) && parentName.Contains("People"))
             {
