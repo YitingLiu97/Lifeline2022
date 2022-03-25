@@ -17,9 +17,9 @@ public class LineRender : MonoBehaviour
         bubbleLine = GetComponent<LineRenderer>(); 
         DrawBubbleLine();
 
-        bubbleLine.startWidth = .3f;
-        bubbleLine.endWidth = .3f;
-        bubbleLine.numCornerVertices = 90;
+        bubbleLine.startWidth = .2f;
+        bubbleLine.endWidth = .2f;
+        bubbleLine.numCornerVertices = 90; 
         bubbleLine.numCapVertices = 90;
     }
 
@@ -27,13 +27,14 @@ public class LineRender : MonoBehaviour
     {
         bubbleLine.positionCount = bubbles.Count;
         bubbleLine.SetPositions(bubblePositions);
-
     }
 
     void SetBubbleLinePositions()
     {
         int index = 0;
         foreach (GameObject bubble in bubbles) {
+            //Vector3 bubbleTemp = bubble.transform.position;
+            //bubbleTemp.y -= 0.3f;  
             bubblePositions[index] = bubble.transform.position;
             index++;
         }
