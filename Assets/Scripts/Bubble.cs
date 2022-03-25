@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using TMPro;
 using UnityEngine.UI;
+using UnityEngine.EventSystems;
+
 public class Bubble : MonoBehaviour
 {
 
@@ -18,17 +21,12 @@ public class Bubble : MonoBehaviour
         public int impactValue;
         public int age;
         public List<string> people = new List<string>();
-        [Range(0, 10)]
-        public int CategoryTwo;
-        [Range(0, 10)]
-        public int CategoryThree;
-        [Range(0, 10)]
-        public int CategoryFour;
-        [Range(0, 10)]
-        public int CategoryFive;
-        [Range(0, 10)]
-        public int CategorySix;
+        public List<string> emotions = new List<string>();
     }
+
+    public List<string> peopleList = new List<string>();
+    public List<string> emotionList = new List<string>();
+
     [Serializable]
     public class AllBubbleData
     {
@@ -38,28 +36,21 @@ public class Bubble : MonoBehaviour
     public const int CATEGORY_SIZE = 6;
     public const int RADAR_MAX_VALUE = 10;
     public GameObject bubblePrefab;
-    GameObject radarChartPrefab;
-    RadarChart currentRadar;
+    public GameObject buttonPrefab;
+    public List<GameObject> buttonPrefabs;
     public List<GameObject> bubblePrefabs;
     public List<GameObject> radarChartPrefabs;
     public List<RadarChart> currentRadarPrefabs;
     public AllBubbleData abData = new AllBubbleData();
 
 
-
     // Start is called before the first frame update
     void Start()
     {
-
-
         ReadFromFile();
         CreateBubbles();
+        PopulateListForPeopleAndEmotions();
 
-        for (int i = 0; i < currentRadarPrefabs.Count; i++)
-        {
-            BubbleData bubbleData = abData.bubbleDatas[i];
-            AssignDataToRadar(bubbleData, currentRadarPrefabs[i]);
-        }
     }
 
     // create an editor that saves the json - low priority 
@@ -75,6 +66,89 @@ public class Bubble : MonoBehaviour
 
     }
 
+    void PopulateListForPeopleAndEmotions() {
+        GameObject people = GameObject.FindGameObjectWithTag("People");
+        GameObject emotion = GameObject.FindGameObjectWithTag("Emotions");
+
+        for (int i = 0; i < peopleList.Count; i++)
+        {
+            buttonPrefab.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = peopleList[i];
+            buttonPrefab.gameObject.name = peopleList[i];
+            Instantiate(buttonPrefab, people.transform);
+            buttonPrefabs.Add(buttonPrefab);
+
+        }
+
+        for (int i = 0; i < emotionList.Count; i++)
+        {
+            buttonPrefab.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = emotionList[i];
+            buttonPrefab.gameObject.name = emotionList[i];
+            Instantiate(buttonPrefab, emotion.transform);
+            buttonPrefabs.Add(buttonPrefab);
+        }
+
+
+
+    }
+ /*   /// <summary>
+    /// button on click to add data to specific string 
+    /// </summary>
+    /// <param name="bubbleData"></param>
+    /// <param name="strDataList"></param>
+    /// <param name="strData"></param>
+    public void AddContentToJson(BubbleData bubbleData, string strData) {
+
+        bubbleData = abData.bubbleDatas[0];
+
+        // setactive the canvas when the bubble data is picked 
+
+        if (GetComponentInParent<GameObject>().tag == "Emotions")
+        {
+            if (bubbleData.emotions.Contains(strData))
+            {
+                bubbleData.emotions.Add(strData);
+            }
+        }
+        if (GetComponentInParent<GameObject>().tag == "People")
+        {
+            if (bubbleData.people.Contains(strData))
+            {
+                bubbleData.people.Add(strData);
+            }
+        }
+
+    }*/
+
+
+    public void SaveNameToList() {
+        GameObject current = EventSystem.current.currentSelectedGameObject;
+
+        GameObject currentParent = current.GetComponentInParent<GameObject>();
+        string name = current.name;
+
+
+        List<string> dataEmotionList = abData.bubbleDatas[0].emotions;
+        List<string> dataPeopleList = abData.bubbleDatas[0].people;
+        if (currentParent.tag == "Emotions") {
+            if (!dataEmotionList.Contains(name))
+            {
+
+                dataEmotionList.Add(name);
+            }
+        }
+
+
+        if (currentParent.tag == "People")
+        {
+            if (!dataPeopleList.Contains(name)) {
+                dataPeopleList.Add(name);
+            }
+        }
+
+
+
+    }
+
     /// <summary>
     /// Create the bubbles and assign the bubble prefabs 
     /// can use the prefabs index to change the name of the gameobject 
@@ -85,30 +159,11 @@ public class Bubble : MonoBehaviour
         {
             GameObject go = Instantiate(bubblePrefab, this.transform);
             go.name = abData.bubbleDatas[i].Moment;
-            radarChartPrefab = bubblePrefab.gameObject.transform.Find("RadarChart").gameObject;
-            currentRadar = radarChartPrefab.transform.Find("Current").gameObject.GetComponent<RadarChart>();
-            //Debug.Log($"radarChartPrefab {radarChartPrefab.name}, currentRadar {currentRadar.GetComponentInParent<GameObject>().name}");
             bubblePrefabs.Add(go);
-            radarChartPrefabs.Add(radarChartPrefab);
-            currentRadarPrefabs.Add(currentRadar);
         }
 
     }
 
-    void FindCurrentRadar() {
-
-        // based on the index 
-
-      /*  for (int i = 0; i < bubblePrefabs.Count; i++)
-        {
-            currentRadarPrefabs[i]
-        }
-    */
-    
-    
-    
-    
-    }
     // should map the age to the timeline and set the transform for the bubble individually     
     // assign that to the position of the bubble in the world 
     void AssignDataToBubble(BubbleData bubbleData, GameObject bubble)
@@ -118,19 +173,21 @@ public class Bubble : MonoBehaviour
 
     }
 
-    float MapToZeroToOne(float originalValue, float maxValue) {
+    float MapToZeroToOne(float originalValue, float maxValue)
+    {
         return originalValue / maxValue;
     }
-    // chart is not really working - it is the same data 
-    void AssignDataToRadar(BubbleData bubbleData, RadarChart radarChart)
-    {
-        Debug.Log($"bubble data is {bubbleData.Moment}, radarChart {radarChart.GetParameters()}");
-        radarChart.SetParameter(0,MapToZeroToOne(bubbleData.CategoryTwo,RADAR_MAX_VALUE));
-        radarChart.SetParameter(1, MapToZeroToOne(bubbleData.CategoryThree, RADAR_MAX_VALUE));
-        radarChart.SetParameter(2, MapToZeroToOne(bubbleData.CategoryFour, RADAR_MAX_VALUE));
-        radarChart.SetParameter(3, MapToZeroToOne(bubbleData.CategoryFive, RADAR_MAX_VALUE));
-        radarChart.SetParameter(4, MapToZeroToOne(bubbleData.CategorySix, RADAR_MAX_VALUE));
-    }
+    /*    void AssignDataToRadar(BubbleData bubbleData, RadarChart radarChart)
+        {
+            Debug.Log($"bubble data is {bubbleData.Moment}, radarChart {radarChart.GetParameters()}");
+            radarChart.SetParameter(0,MapToZeroToOne(bubbleData.CategoryTwo,RADAR_MAX_VALUE));
+            radarChart.SetParameter(1, MapToZeroToOne(bubbleData.CategoryThree, RADAR_MAX_VALUE));
+            radarChart.SetParameter(2, MapToZeroToOne(bubbleData.CategoryFour, RADAR_MAX_VALUE));
+            radarChart.SetParameter(3, MapToZeroToOne(bubbleData.CategoryFive, RADAR_MAX_VALUE));
+            radarChart.SetParameter(4, MapToZeroToOne(bubbleData.CategorySix, RADAR_MAX_VALUE));
+        }
+    */   
+    
     // read from json file 
     void ReadFromFile()
     {
@@ -153,17 +210,12 @@ public class Bubble : MonoBehaviour
 
     }
 
-
-
-
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             SaveToJson();
-
-
         }
+
     }
 }
