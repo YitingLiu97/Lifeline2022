@@ -5,9 +5,9 @@ using UnityEngine;
 public class ToggleChair : MonoBehaviour
 {
 
-    [SerializeField] Transform player;
-    [SerializeField] float zOffset = 2;
-    [SerializeField] float xOffset = 2;
+    //[SerializeField] Transform player;
+    //[SerializeField] float zOffset = 2;
+    //[SerializeField] float xOffset = 2;
 
     private bool isActive = false;
 
@@ -16,11 +16,11 @@ public class ToggleChair : MonoBehaviour
     {
         if (!isActive)
         {
-            Vector3 tempPos = player.transform.position;
-            tempPos.y = 0;
-            tempPos.z += zOffset;
-            tempPos.x += xOffset;
-            gameObject.transform.position = tempPos;
+            //Vector3 tempPos = player.transform.position;
+            //tempPos.y = 0;
+            //tempPos.z += zOffset;
+            //tempPos.x += xOffset;
+            //gameObject.transform.position = tempPos;
             gameObject.SetActive(true);
             isActive = true;
         }
