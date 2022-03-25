@@ -5,10 +5,12 @@ using UnityEngine;
 public class ToggleChair : MonoBehaviour
 {
 
-
-    // 
     [SerializeField] Transform player;
+    [SerializeField] float zOffset = 2;
+    [SerializeField] float xOffset = 2;
+
     private bool isActive = false;
+
 
     public void ToggleTheChair()
     {
@@ -16,8 +18,8 @@ public class ToggleChair : MonoBehaviour
         {
             Vector3 tempPos = player.transform.position;
             tempPos.y = 0;
-            tempPos.z += 2;
-            tempPos.x += 2;
+            tempPos.z += zOffset;
+            tempPos.x += xOffset;
             gameObject.transform.position = tempPos;
             gameObject.SetActive(true);
             isActive = true;
@@ -25,19 +27,8 @@ public class ToggleChair : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
-
+            isActive = false;
         }
     }   
 
-   
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
