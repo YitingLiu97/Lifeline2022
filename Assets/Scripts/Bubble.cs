@@ -55,7 +55,7 @@ public class Bubble : MonoBehaviour
         ReadFromFile();
         CreateBubbles();
 
-        for (int i = 0; i < abData.bubbleDatas.Count; i++)
+        for (int i = 0; i < currentRadarPrefabs.Count; i++)
         {
             BubbleData bubbleData = abData.bubbleDatas[i];
             AssignDataToRadar(bubbleData, currentRadarPrefabs[i]);
@@ -87,11 +87,27 @@ public class Bubble : MonoBehaviour
             go.name = abData.bubbleDatas[i].Moment;
             radarChartPrefab = bubblePrefab.gameObject.transform.Find("RadarChart").gameObject;
             currentRadar = radarChartPrefab.transform.Find("Current").gameObject.GetComponent<RadarChart>();
+            //Debug.Log($"radarChartPrefab {radarChartPrefab.name}, currentRadar {currentRadar.GetComponentInParent<GameObject>().name}");
             bubblePrefabs.Add(go);
             radarChartPrefabs.Add(radarChartPrefab);
             currentRadarPrefabs.Add(currentRadar);
         }
 
+    }
+
+    void FindCurrentRadar() {
+
+        // based on the index 
+
+      /*  for (int i = 0; i < bubblePrefabs.Count; i++)
+        {
+            currentRadarPrefabs[i]
+        }
+    */
+    
+    
+    
+    
     }
     // should map the age to the timeline and set the transform for the bubble individually     
     // assign that to the position of the bubble in the world 
