@@ -240,6 +240,38 @@ public class Bubble : MonoBehaviour
 
     }
 
+    // dummy key to drag the bubbble 
+    // just focus on one bubble for now 
+
+    // show the category selections 
+    // show people 
+    // once clicked finished people 
+    // show emotions 
+    // once clicked the finished emotions 
+    // turn category off, show the bubble again 
+
+
+    // if category is selected 
+    void CategorySelectionProcess(Canvas categorySelection, GameObject peopleGroup, GameObject emotionGroup)
+    {
+
+        Button finishedPeople, finishedEmotion;
+
+        peopleGroup.SetActive(true);
+        emotionGroup.SetActive(true);
+
+        if (!categorySelection.gameObject.activeSelf)
+        {
+            categorySelection.gameObject.SetActive(!categorySelection.gameObject.activeSelf);
+        }
+
+    
+
+
+
+
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -253,7 +285,7 @@ public class Bubble : MonoBehaviour
         {
             // show the category selections 
             // show people 
-            // once cliekde finished people 
+            // once clicked finished people 
             // show emotions 
             // once clicked the finished emotions 
             // turn category off, show the bubble again 
