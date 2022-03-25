@@ -13,7 +13,7 @@ public class CategorySelection : MonoBehaviour
     public bool finishedEmotionClicked = false;
     void Start()
     {
-        deepDive = true;
+        deepDive = false;
         finishedPeopleClicked = false;
         finishedEmotionClicked = false;
         /*        peopleGroup.gameObject.SetActive(false);
@@ -38,8 +38,12 @@ public class CategorySelection : MonoBehaviour
           emotionGroup.SetActive(false);*/
         Debug.Log("deep dive is " + deepDive);
         deepDive = true;
-        finishedPeopleClicked = false;
-        finishedEmotionClicked = false;
+/*
+        peopleGroup.SetActive(true);
+        emotionGroup.SetActive(false);*/
+        /* finishedPeopleClicked = true;
+
+         finishedEmotionClicked = false;*/
         /*Debug.Log($"people group is {peopleGroup.name}");
         Debug.Log($"people parent is {peopleGroup.gameObject.transform.parent.name}");
         Debug.Log($"emotionGroup is {emotionGroup.name}");
@@ -72,7 +76,7 @@ public class CategorySelection : MonoBehaviour
     private void OnDestroy()
     {
         // problem with this one 
-        deepDive = true;
+        deepDive = false;
         finishedPeopleClicked = false;
         finishedEmotionClicked = false;
 
@@ -85,7 +89,7 @@ public class CategorySelection : MonoBehaviour
             peopleGroup.SetActive(true);
             emotionGroup.SetActive(false);
 
-            if (finishedPeopleClicked)
+           /* if (finishedPeopleClicked)
             {
                 peopleGroup.SetActive(false);
                 emotionGroup.SetActive(true);
@@ -103,13 +107,13 @@ public class CategorySelection : MonoBehaviour
                 peopleGroup.gameObject.SetActive(false);
                 emotionGroup.gameObject.SetActive(false);
 
-            }
+            }*/
         }
         else
         {
 
-            peopleGroup.gameObject.SetActive(false);
-            emotionGroup.gameObject.SetActive(false);
+            peopleGroup.SetActive(false);
+            emotionGroup.SetActive(false);
 
 
         }

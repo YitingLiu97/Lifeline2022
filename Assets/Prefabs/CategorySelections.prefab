@@ -317,7 +317,7 @@ MonoBehaviour:
   emotionGroup: {fileID: 961481231398380670}
   finishedPeople: {fileID: 5044590497241150029}
   finishedEmotion: {fileID: 943932698022883515}
-  deepDive: 0
+  deepDive: 1
   finishedPeopleClicked: 0
   finishedEmotionClicked: 0
 --- !u!1 &961481231398380670
@@ -336,7 +336,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &961481231398380671
 RectTransform:
   m_ObjectHideFlags: 0
