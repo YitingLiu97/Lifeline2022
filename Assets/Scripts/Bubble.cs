@@ -8,6 +8,7 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Linq;
 
+
 public class Bubble : MonoBehaviour
 {
 
@@ -24,6 +25,8 @@ public class Bubble : MonoBehaviour
 
     public List<string> peopleList = new List<string>();
     public List<string> emotionList = new List<string>();
+
+
 
     [Serializable]
     public class AllBubbleData
@@ -59,8 +62,12 @@ public class Bubble : MonoBehaviour
         {
             abData.bubbleDatas[i].people = AvoidDuplicatesInList(abData.bubbleDatas[i].people);
             abData.bubbleDatas[i].emotions = AvoidDuplicatesInList(abData.bubbleDatas[i].emotions);
-            bubblePrefabs[i].transform.Find("Label Canvas/Label").name = abData.bubbleDatas[i].Moment;
-          // bubblePrefabs[i].transform.Find("Label Canvas/Label").GetComponent<TextMeshProUGUI>().text = abData.bubbleDatas[i].Moment;
+            bubblePrefabs[i].transform.Find("VertexExtrusion/Placard/Label").gameObject.name = abData.bubbleDatas[i].Moment;
+            // should update the text mesh text 
+            //   bubblePrefabs[i].transform.Find("VertexExtrusion/Placard/Label").gameObject.GetComponent<TextMesh>().text = abData.bubbleDatas[i].Moment;
+            //  bubblePrefabs[i].transform.Find("VertexExtrusion/Placard/Label").gameObject.GetComponent<TextMesh>().text = abData.bubbleDatas[i].Moment;
+            // bubblePrefabs[i].transform.Find("VertexExtrusion/Placard/Label").gameObject.GetComponent<TextMesh>().text = abData.bubbleDatas[i].Moment;
+            // bubblePrefabs[i].transform.Find("Label Canvas/Label").GetComponent<TextMeshProUGUI>().text = abData.bubbleDatas[i].Moment;
         }
 
 
@@ -82,7 +89,7 @@ public class Bubble : MonoBehaviour
 
     }
 
- 
+
     // randomize the bubble positions 
     // only show category when the ball is clicked/ collided 
 
@@ -118,7 +125,7 @@ public class Bubble : MonoBehaviour
             List<string> theEmotions = abData.bubbleDatas[i].emotions;
 
             //find out the parent name or the button name 
-           //Debug.Log($"button name is {button.name}, bubble string is {bubbleString}, parent name is {parentName}");
+            //Debug.Log($"button name is {button.name}, bubble string is {bubbleString}, parent name is {parentName}");
 
             if (parentName.Contains(bubbleString) && parentName.Contains("People"))
             {
@@ -270,7 +277,7 @@ public class Bubble : MonoBehaviour
             categorySelection.gameObject.SetActive(!categorySelection.gameObject.activeSelf);
         }
 
-    
+
 
 
 
