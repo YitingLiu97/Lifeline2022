@@ -6,12 +6,10 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using System.Linq;
 
 public class Bubble : MonoBehaviour
 {
-
-    // read from json 
-    // bubble class 
 
     [Serializable]
     public class BubbleData
@@ -39,8 +37,8 @@ public class Bubble : MonoBehaviour
     public GameObject buttonPrefab;
     public List<GameObject> buttonPrefabs;
     public List<GameObject> bubblePrefabs;
-    public List<GameObject> radarChartPrefabs;
-    public List<RadarChart> currentRadarPrefabs;
+    /*    public List<GameObject> radarChartPrefabs;
+        public List<RadarChart> currentRadarPrefabs;*/
     public AllBubbleData abData = new AllBubbleData();
 
 
@@ -49,16 +47,109 @@ public class Bubble : MonoBehaviour
     {
         ReadFromFile();
         CreateBubbles();
-        PopulateListForPeopleAndEmotions();
+        //  PopulateListForPeopleAndEmotions();
+
+        for (int i = 0; i < buttonPrefabs.Count; i++)
+        {
+            Button btn = buttonPrefabs[i].GetComponent<Button>();
+            btn.onClick.AddListener(() => OnClicked(btn));
+        }
+
+        for (int i = 0; i < abData.bubbleDatas.Count; i++)
+        {
+            abData.bubbleDatas[i].people = AvoidDuplicatesInList(abData.bubbleDatas[i].people);
+            abData.bubbleDatas[i].emotions = AvoidDuplicatesInList(abData.bubbleDatas[i].emotions);
+
+        }
+        //PopulateListForPeopleAndEmotions();
+
+        /*       for (int i = 0; i < buttonPrefabs.Count; i++)
+               {
+                   BubbleData bubbleData = abData.bubbleDatas[i];
+                 //  SaveButtonValueToJson(bubbleData, currentRadarPrefabs[i]);
+               }*/
+    }
+
+    //once on clicked, save to people list in the json 
+    public void OnClickedMsg()
+    {
+
+        Debug.Log("clicked");
 
     }
+
+    // randomize the bubble positions 
+    // only show category when the ball is clicked/ collided 
+
+
+    // category PEOPLE showing - button - build the ui the same 
+    // category EMOTIONS showing - button - build the ui the same 
+
+    // avoid duplicates 
+
+    // set up a button 
+    public void ClearTheList()
+    {
+
+        // a button to clear the list to edit 
+
+
+    }
+
+    public List<string> AvoidDuplicatesInList(List<string> list)
+    {
+        return list.Distinct().ToList();
+
+    }
+    public void OnClicked(Button button)
+    {
+
+        for (int i = 0; i < abData.bubbleDatas.Count; i++)
+        {
+            string bubbleString = abData.bubbleDatas[i].Moment;
+            string parentName = button.GetComponentInParent<GridLayoutGroup>().gameObject.name;
+            button.name = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TextMeshProUGUI>().text;
+            List<string> thePeople = abData.bubbleDatas[i].people;
+            List<string> theEmotions = abData.bubbleDatas[i].emotions;
+
+            //find out the parent name or the button name 
+            Debug.Log($"button name is {button.name}, bubble string is {bubbleString}, parent name is {parentName}");
+
+            if (parentName.Contains(bubbleString) && parentName.Contains("People"))
+            {
+                if (!thePeople.Contains(button.name))
+                {
+                    thePeople.Add(button.name);
+                }
+                thePeople = thePeople.Distinct().ToList();
+
+                Debug.Log("people list is " + thePeople.Count);
+            }
+
+            if (parentName.Contains(bubbleString) && parentName.Contains("Emotions"))
+            {
+                if (!theEmotions.Contains(button.name))
+                {
+                    theEmotions.Add(button.name);
+
+                }
+                theEmotions = theEmotions.Distinct().ToList();
+
+                Debug.Log("emotions list is " + theEmotions.Count);
+
+            }
+        }
+
+        SaveToJson();
+    }
+
 
     // create an editor that saves the json - low priority 
     // save to json from the inspector 
     void SaveToJson()
     {
         string filePath = Path.Combine(Application.streamingAssetsPath, "BubbleData.json");
-
+        filePath = filePath.Replace(@"\", @"/");
         string json = JsonUtility.ToJson(abData);
         File.WriteAllText(filePath, json);
         Debug.Log($"inspectorBubbleData is {abData}, {abData.bubbleDatas.Count}");
@@ -66,73 +157,19 @@ public class Bubble : MonoBehaviour
 
     }
 
-    void PopulateListForPeopleAndEmotions() {
-        GameObject people = GameObject.FindGameObjectWithTag("People");
-        GameObject emotion = GameObject.FindGameObjectWithTag("Emotions");
-
-        for (int i = 0; i < peopleList.Count; i++)
-        {
-            buttonPrefab.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = peopleList[i];
-            buttonPrefab.gameObject.name = peopleList[i];
-            Instantiate(buttonPrefab, people.transform);
-            buttonPrefabs.Add(buttonPrefab);
-
-        }
-
-        for (int i = 0; i < emotionList.Count; i++)
-        {
-            buttonPrefab.gameObject.GetComponentInChildren<TextMeshProUGUI>().text = emotionList[i];
-            buttonPrefab.gameObject.name = emotionList[i];
-            Instantiate(buttonPrefab, emotion.transform);
-            buttonPrefabs.Add(buttonPrefab);
-        }
-
-
-
-    }
- /*   /// <summary>
-    /// button on click to add data to specific string 
-    /// </summary>
-    /// <param name="bubbleData"></param>
-    /// <param name="strDataList"></param>
-    /// <param name="strData"></param>
-    public void AddContentToJson(BubbleData bubbleData, string strData) {
-
-        bubbleData = abData.bubbleDatas[0];
-
-        // setactive the canvas when the bubble data is picked 
-
-        if (GetComponentInParent<GameObject>().tag == "Emotions")
-        {
-            if (bubbleData.emotions.Contains(strData))
-            {
-                bubbleData.emotions.Add(strData);
-            }
-        }
-        if (GetComponentInParent<GameObject>().tag == "People")
-        {
-            if (bubbleData.people.Contains(strData))
-            {
-                bubbleData.people.Add(strData);
-            }
-        }
-
-    }*/
-
-
-    public void SaveNameToList() {
+    public void SaveNameToList()
+    {
         GameObject current = EventSystem.current.currentSelectedGameObject;
 
         GameObject currentParent = current.GetComponentInParent<GameObject>();
         string name = current.name;
 
-
         List<string> dataEmotionList = abData.bubbleDatas[0].emotions;
         List<string> dataPeopleList = abData.bubbleDatas[0].people;
-        if (currentParent.tag == "Emotions") {
+        if (currentParent.tag == "Emotions")
+        {
             if (!dataEmotionList.Contains(name))
             {
-
                 dataEmotionList.Add(name);
             }
         }
@@ -140,7 +177,8 @@ public class Bubble : MonoBehaviour
 
         if (currentParent.tag == "People")
         {
-            if (!dataPeopleList.Contains(name)) {
+            if (!dataPeopleList.Contains(name))
+            {
                 dataPeopleList.Add(name);
             }
         }
@@ -160,6 +198,8 @@ public class Bubble : MonoBehaviour
             GameObject go = Instantiate(bubblePrefab, this.transform);
             go.name = abData.bubbleDatas[i].Moment;
             bubblePrefabs.Add(go);
+            bubblePrefabs[i].transform.Find("CategorySelections/People").gameObject.name += " " + go.name;
+            bubblePrefabs[i].transform.Find("CategorySelections/Emotions").gameObject.name += " " + go.name;
         }
 
     }
@@ -170,28 +210,18 @@ public class Bubble : MonoBehaviour
     {
 
 
-
     }
 
     float MapToZeroToOne(float originalValue, float maxValue)
     {
         return originalValue / maxValue;
     }
-    /*    void AssignDataToRadar(BubbleData bubbleData, RadarChart radarChart)
-        {
-            Debug.Log($"bubble data is {bubbleData.Moment}, radarChart {radarChart.GetParameters()}");
-            radarChart.SetParameter(0,MapToZeroToOne(bubbleData.CategoryTwo,RADAR_MAX_VALUE));
-            radarChart.SetParameter(1, MapToZeroToOne(bubbleData.CategoryThree, RADAR_MAX_VALUE));
-            radarChart.SetParameter(2, MapToZeroToOne(bubbleData.CategoryFour, RADAR_MAX_VALUE));
-            radarChart.SetParameter(3, MapToZeroToOne(bubbleData.CategoryFive, RADAR_MAX_VALUE));
-            radarChart.SetParameter(4, MapToZeroToOne(bubbleData.CategorySix, RADAR_MAX_VALUE));
-        }
-    */   
-    
+
     // read from json file 
     void ReadFromFile()
     {
         string filePath = Path.Combine(Application.streamingAssetsPath, "BubbleData.json");
+        filePath = filePath.Replace(@"\", @"/");
 
         if (!File.Exists(filePath))
         {
@@ -217,5 +247,18 @@ public class Bubble : MonoBehaviour
             SaveToJson();
         }
 
+        // dummy key to drag the bubbble 
+        // just focus on one bubble for now 
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            // show the category selections 
+            // show people 
+            // once cliekde finished people 
+            // show emotions 
+            // once clicked the finished emotions 
+            // turn category off, show the bubble again 
+
+
+        }
     }
 }
