@@ -23,7 +23,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject EMDR;
     [SerializeField] GameObject EmotionWheel;
     [SerializeField] AudioSource Music;
-
+    [SerializeField] int loadSeconds = 3;
 
     private void Awake()
     {
@@ -63,10 +63,13 @@ public class GameManager : MonoBehaviour
             CheckandPlay();
             Logo.SetActive(true);
             Graph.SetActive(false);
-            Moments.SetActive(true);
+            Moments.SetActive(false);
             Chair.SetActive(false);
             EmotionWheel.SetActive(false);
             EMDR.SetActive(false);
+            StartCoroutine(MomentWait());
+
+            
 
         }
         else if(currentState == GameState.Transition)
@@ -141,6 +144,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private IEnumerator MomentWait()
+    {
+        yield return new WaitForSeconds(loadSeconds);
+        Moments.SetActive(true);
+        Logo.SetActive(false);
+    }
 
 
 
