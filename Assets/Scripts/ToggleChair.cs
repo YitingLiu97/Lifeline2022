@@ -27,8 +27,6 @@ public class ToggleChair : MonoBehaviour
         tempPos.y += yOffset;
         gameObject.transform.position = tempPos;
 
- 
-
         chairPos.LookAt(tempPos);
     
     }

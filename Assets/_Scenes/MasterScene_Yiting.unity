@@ -1028,6 +1028,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4306498544395139041, guid: 9c8283ad98f4a4262841f8f1a3a9c16a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306498544395139041, guid: 9c8283ad98f4a4262841f8f1a3a9c16a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306498544395139041, guid: 9c8283ad98f4a4262841f8f1a3a9c16a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4306498544395139041, guid: 9c8283ad98f4a4262841f8f1a3a9c16a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -1983,7 +1995,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3449303763257342722, guid: c067ab47c8b85934ca24f0461d05b1eb, type: 3}
       propertyPath: zOffset
-      value: -0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3449303763257342722, guid: c067ab47c8b85934ca24f0461d05b1eb, type: 3}
       propertyPath: chairPos
