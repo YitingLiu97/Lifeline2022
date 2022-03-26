@@ -24,12 +24,12 @@ public class CategorySelection : MonoBehaviour
 
     public void DeepDiveOnClick()
     {
-        /* deepDive = true;
-         peopleGroup.SetActive(true);
-         emotionGroup.SetActive(false);*/
+        deepDive = true;
+        peopleGroup.SetActive(true);
+        emotionGroup.SetActive(false);
         Debug.Log("deep dive is " + deepDive);
 
-        if (!deepDive)
+      /*  if (!deepDive)
         {
             deepDive = true;
             peopleGroup.SetActive(true);
@@ -41,7 +41,7 @@ public class CategorySelection : MonoBehaviour
             emotionGroup.SetActive(true);
             deepDive = false;
 
-        }
+        }*/
 
 
     }
