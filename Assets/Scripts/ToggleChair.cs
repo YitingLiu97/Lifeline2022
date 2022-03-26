@@ -7,8 +7,8 @@ public class ToggleChair : MonoBehaviour
 
     [SerializeField] Transform player;
     [SerializeField] Transform chairPos;
-/*    [SerializeField] float distance = 2f;
-*/    [SerializeField] float zOffset = 2;
+    [SerializeField] float distance = 2f;
+    [SerializeField] float zOffset = 2;
     [SerializeField] float xOffset = 2;
     [SerializeField] float yOffset = -2;
 
@@ -27,8 +27,9 @@ public class ToggleChair : MonoBehaviour
         tempPos.y += yOffset;
         gameObject.transform.position = tempPos;
 
+        chairPos.position += new Vector3(distance, 0, 0);
         chairPos.LookAt(tempPos);
-    
+
     }
 
 }
