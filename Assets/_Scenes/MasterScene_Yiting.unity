@@ -1314,6 +1314,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble Testing UI
       objectReference: {fileID: 0}
+    - target: {fileID: 7975978622777682535, guid: cf8def0118eb14645b2a077905ddf82f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8146377574170521205, guid: cf8def0118eb14645b2a077905ddf82f, type: 3}
       propertyPath: m_RootOrder
       value: 8
