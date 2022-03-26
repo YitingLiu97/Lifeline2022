@@ -203,11 +203,20 @@ public class Bubble : MonoBehaviour
     /// Create the bubbles and assign the bubble prefabs 
     /// can use the prefabs index to change the name of the gameobject 
     /// </summary>
+    /// 
+    public float radius = 20f;
+    public float floorPosition = -2f;
     void CreateBubbles()
     {
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
         {
-            GameObject go = Instantiate(bubblePrefab, this.transform);
+            float angle = i * Mathf.PI*2f / abData.bubbleDatas.Count;
+           
+            Vector3 newPos = new Vector3(Mathf.Cos(angle) * radius, floorPosition, Mathf.Sin(angle) * radius);
+            GameObject go = Instantiate(bubblePrefab, newPos, Quaternion.identity, this.transform);
+
+
+          //  GameObject go = Instantiate(bubblePrefab, this.transform);
             go.name = abData.bubbleDatas[i].Moment;
             bubblePrefabs.Add(go);
             bubblePrefabs[i].transform.Find("CategorySelections/People").gameObject.name += " " + go.name;
