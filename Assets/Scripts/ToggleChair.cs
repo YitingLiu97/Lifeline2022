@@ -8,6 +8,7 @@ public class ToggleChair : MonoBehaviour
     [SerializeField] Transform player;
     [SerializeField] float zOffset = 2;
     [SerializeField] float xOffset = 2;
+    [SerializeField] float yOffset = -2;
 
     private bool isActive = false;
 
