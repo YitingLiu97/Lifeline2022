@@ -1,1 +1,192 @@
-{"bubbleDatas":[{"Moment":"Sister's Death","impactValue":-8,"age":10,"people":["Mom","Brother","Grandma","Dad"],"emotions":["Sad"]},{"Moment":"First Crush, on a girl","impactValue":6,"age":14,"people":["Sarah","Dad"],"emotions":["Joyful"]},{"Moment":"Shamed in School Hall for being Queer","impactValue":-10,"age":15,"people":["Mom"],"emotions":["Scared"]},{"Moment":"First Relationship, with a boy","impactValue":-5,"age":16,"people":["Mom"],"emotions":["Mad"]},{"Moment":"Body Shamed by Best Friend","impactValue":-10,"age":16,"people":["Leshawna","Mom"],"emotions":["Mad"]},{"Moment":"Denied from NYU","impactValue":-4,"age":17,"people":["Me"],"emotions":["Scared"]},{"Moment":"Moving Out and going to College","impactValue":6,"age":17,"people":["Dad"],"emotions":["Powerful"]},{"Moment":"Hospitalized by Abusive Boyfriend","impactValue":-9,"age":18,"people":["John","Mom"],"emotions":["Scared"]},{"Moment":"Dropping Out of College","impactValue":-7,"age":19,"people":["Me"],"emotions":["Scared"]},{"Moment":"Received Green Card","impactValue":9,"age":20,"people":["Me","Dad"],"emotions":["Joyful"]},{"Moment":"Being Diagnosed with Depression","impactValue":1,"age":20,"people":["Me"],"emotions":["Scared"]},{"Moment":"First Dog","impactValue":5,"age":22,"people":["Gryffin"],"emotions":["Peaceful"]},{"Moment":"Coming Out of the Closet","impactValue":10,"age":25,"people":["Me","Mom","Dad"],"emotions":["Peaceful"]},{"Moment":"Marriage","impactValue":8,"age":28,"people":["Me","Wife","Mom","Dad"],"emotions":["Joyful"]},{"Moment":"Adoption","impactValue":8,"age":29,"people":["Son"],"emotions":["Joyful"]},{"Moment":"Wife's Addition","impactValue":-7,"age":31,"people":["Wife"],"emotions":["Sad"]}]}
+{
+    "bubbleDatas": [
+        {
+            "Moment": "Sister's Death",
+            "impactValue": -8,
+            "age": 10,
+            "people": [
+                "Mom",
+                "Brother",
+                "Grandma",
+                "Dad"
+            ],
+            "emotions": [
+                "Sad"
+            ]
+        },
+        {
+            "Moment": "First Crush, on a boy",
+            "impactValue": 6,
+            "age": 14,
+            "people": [
+                "Dave",
+                "Dad"
+            ],
+            "emotions": [
+                "Joyful"
+            ]
+        },
+        {
+            "Moment": "Shamed in School Hall for being Queer",
+            "impactValue": -10,
+            "age": 15,
+            "people": [
+                "Mom"
+            ],
+            "emotions": [
+                "Scared"
+            ]
+        },
+        {
+            "Moment": "First Relationship, with a girl",
+            "impactValue": -5,
+            "age": 16,
+            "people": [
+                "Mom"
+            ],
+            "emotions": [
+                "Mad"
+            ]
+        },
+        {
+            "Moment": "Body Shamed by Best Friend",
+            "impactValue": -10,
+            "age": 16,
+            "people": [
+                "Leshawna",
+                "Mom"
+            ],
+            "emotions": [
+                "Mad"
+            ]
+        },
+        {
+            "Moment": "Denied from NYU",
+            "impactValue": -4,
+            "age": 17,
+            "people": [
+                "Me"
+            ],
+            "emotions": [
+                "Scared"
+            ]
+        },
+        {
+            "Moment": "Moving Out and going to College",
+            "impactValue": 6,
+            "age": 17,
+            "people": [
+                "Dad"
+            ],
+            "emotions": [
+                "Powerful"
+            ]
+        },
+        {
+            "Moment": "Hospitalized by Abusive Girlfriend",
+            "impactValue": -9,
+            "age": 18,
+            "people": [
+                "Lucy",
+                "Mom"
+            ],
+            "emotions": [
+                "Scared"
+            ]
+        },
+        {
+            "Moment": "Dropping Out of College",
+            "impactValue": -7,
+            "age": 19,
+            "people": [
+                "Me"
+            ],
+            "emotions": [
+                "Scared"
+            ]
+        },
+        {
+            "Moment": "Received Green Card",
+            "impactValue": 9,
+            "age": 20,
+            "people": [
+                "Me",
+                "Dad"
+            ],
+            "emotions": [
+                "Joyful"
+            ]
+        },
+        {
+            "Moment": "Being Diagnosed with Depression",
+            "impactValue": 1,
+            "age": 20,
+            "people": [
+                "Me"
+            ],
+            "emotions": [
+                "Scared"
+            ]
+        },
+        {
+            "Moment": "First Dog",
+            "impactValue": 5,
+            "age": 22,
+            "people": [
+                "Gryffin"
+            ],
+            "emotions": [
+                "Peaceful"
+            ]
+        },
+        {
+            "Moment": "Coming Out of the Closet",
+            "impactValue": 10,
+            "age": 25,
+            "people": [
+                "Me",
+                "Mom",
+                "Dad"
+            ],
+            "emotions": [
+                "Peaceful"
+            ]
+        },
+        {
+            "Moment": "Marriage",
+            "impactValue": 8,
+            "age": 28,
+            "people": [
+                "Me",
+                "Husband",
+                "Mom",
+                "Dad"
+            ],
+            "emotions": [
+                "Joyful"
+            ]
+        },
+        {
+            "Moment": "Adoption",
+            "impactValue": 8,
+            "age": 29,
+            "people": [
+                "Son"
+            ],
+            "emotions": [
+                "Joyful"
+            ]
+        },
+        {
+            "Moment": "Husband's Addition",
+            "impactValue": -7,
+            "age": 31,
+            "people": [
+                "Husband"
+            ],
+            "emotions": [
+                "Sad"
+            ]
+        }
+    ]
+}

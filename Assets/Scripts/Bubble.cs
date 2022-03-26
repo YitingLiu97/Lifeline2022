@@ -48,15 +48,10 @@ public class Bubble : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        SaveToJson();
-       // ReadFromFile();
-
-  
-
+       // SaveToJson();
+        ReadFromFile();
         CreateBubbles();
-        //  PopulateListForPeopleAndEmotions();
-
-
+  
         for (int i = 0; i < buttonPrefabs.Count; i++)
         {
             PressableButton btn = buttonPrefabs[i].GetComponent<PressableButton>();
