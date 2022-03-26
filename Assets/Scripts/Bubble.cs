@@ -227,16 +227,14 @@ public class Bubble : MonoBehaviour
 
     }
 
+    public float bubbleTransitionSpeed = 2;
     // should map the age to the timeline and set the transform for the bubble individually     
     // assign that to the position of the bubble in the world 
     void SetBubblesPositions()
     {
-        //Debug.Log($"SetBubblesPositions");
-
         //Start highest age at 0
         int highestAge = 0;
-
-        
+                
 
         //loop through all bubble data
         foreach (BubbleData oneBubble in abData.bubbleDatas)
@@ -249,50 +247,57 @@ public class Bubble : MonoBehaviour
 
         }
 
-        //Debug.Log($"Highest age is {highestAge}");
-
-        //Debug.Log($"Pre-Access to Graph Manager");
-
-        //Debug.Log($"Accesing graph manager {GraphManager.Instance}");
-
-        //get the length of the line, as height of capsule collider
+        //get the length of the line, using workaround of start and end position objects
         float xAxisLength = GraphManager.Instance.graphEnd.position.x - GraphManager.Instance.graphStart.position.x;
 
-        Debug.Log($"Graph Length {xAxisLength}");
-
-        //calc how far each year is positioned
+        //calc distance between years on the graph
         float xIncrement = xAxisLength / highestAge;
 
-        //get the length of the line, as height of capsule collider
+        //get the length of y axis based on capsule collider
         float yAxisLength = GraphManager.Instance.yAxis.GetComponent<CapsuleCollider>().height;
 
-        //calc how far each year is positioned
+        //calc distance between intensity amounts
         float yIncrement = yAxisLength / GraphManager.Instance.intensityScale;
-
-
-        //Debug.Log($"xAxis, xIncrement, yAxis, yIncrement {xAxisLength} - {xIncrement} - {yAxisLength} - {yIncrement}");
 
 
         //loop through all bubble data
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
         {
+            // Positions are calculated by age/impact multiplied by increments
             float xPosition = abData.bubbleDatas[i].age * xIncrement;
             float yPosition = abData.bubbleDatas[i].impactValue * yIncrement;
 
+            //create position, z is 0
             Vector3 newPosition = new Vector3(xPosition, yPosition, 0);
-
-            Debug.Log($"Y Axis Position: {GraphManager.Instance.yAxis.transform.position}");
 
             newPosition += GraphManager.Instance.yAxis.transform.position;
 
-            Debug.Log($"New Position for bubble {i} is: {newPosition}");
-
-
             //set bubble position, TODO: coroutine to LERP
-            bubblePrefabs[i].transform.position = newPosition;
+            //bubblePrefabs[i].transform.position = newPosition;
+            StartCoroutine(MoveBubbleToPosition(bubblePrefabs[i], newPosition));
         }
+    }
+    
+    //Coroutine to move bubble slowly to position
+    IEnumerator MoveBubbleToPosition(GameObject bubbleToMove, Vector3 endPosition)
+    {
+        Debug.Log("Starting coroutine");
 
+        Vector3 startPosition = bubbleToMove.transform.position;
 
+        // while distance between start position and end position is not equal
+        while (Math.Abs(Vector3.Distance(startPosition, endPosition)) > bubbleTransitionSpeed)
+        {
+            bubbleToMove.transform.position = Vector3.Lerp(startPosition, endPosition, Time.deltaTime * bubbleTransitionSpeed);
+
+            if(Math.Abs(Vector3.Distance(startPosition, endPosition)) <= bubbleTransitionSpeed)
+            {
+                bubbleToMove.transform.position = endPosition;
+                //StopCoroutine("MoveBubbleToPosition");
+            }
+
+            yield return null;
+        }
     }
 
     float MapToZeroToOne(float originalValue, float maxValue)

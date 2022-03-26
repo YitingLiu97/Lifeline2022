@@ -90,3 +90,4 @@ MonoBehaviour:
       emotions: []
   radius: 2
   floorPosition: 0
+  bubbleTransitionSpeed: 0.0002
