@@ -58,6 +58,8 @@ public class Bubble : MonoBehaviour
             PressableButton btn = buttonPrefabs[i].GetComponent<PressableButton>();
             btn.ButtonPressed.AddListener(() => SaveButtonToList(btn));
         }
+        
+
 
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
         {
@@ -130,7 +132,7 @@ public class Bubble : MonoBehaviour
             List<string> theEmotions = abData.bubbleDatas[i].emotions;
 
             //find out the parent name or the button name 
-            //Debug.Log($"button name is {button.name}, bubble string is {bubbleString}, parent name is {parentName}");
+         //  Debug.Log($"button name is {button.name}, bubble string is {bubbleString}, parent name is {parentName}");
 
             if (parentName.Contains(bubbleString) || parentName.Contains("People"))
             {

@@ -59,6 +59,8 @@ MonoBehaviour:
   - Excited
   bubblePrefab: {fileID: 8564745004866457804, guid: 7971496ae0abfa24b9c43b2e5caf16f7, type: 3}
   buttonPrefab: {fileID: 3151382946025157870, guid: 9b84da86702e3f649aeb1f7d0435ea9a, type: 3}
+  pieButtonPrefab: {fileID: 7887603314397473519, guid: 75f33644b1f168c4589bf15c70688763, type: 3}
+  pieButtonPrefabs: []
   buttonPrefabs: []
   bubblePrefabs: []
   abData:
@@ -90,4 +92,5 @@ MonoBehaviour:
       emotions: []
   radius: 2
   floorPosition: 0
+  momentMoveThreshold: 0.04
   bubbleTransitionSpeed: 0.0002
