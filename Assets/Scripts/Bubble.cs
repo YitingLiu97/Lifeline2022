@@ -34,21 +34,25 @@ public class Bubble : MonoBehaviour
         public List<BubbleData> bubbleDatas = new List<BubbleData>();
 
     }
+    public GameObject momentVisuals;
     public const int CATEGORY_SIZE = 6;
     public const int RADAR_MAX_VALUE = 10;
     public GameObject bubblePrefab;
     public GameObject buttonPrefab;
     public List<GameObject> buttonPrefabs;
     public List<GameObject> bubblePrefabs;
-    /*    public List<GameObject> radarChartPrefabs;
-        public List<RadarChart> currentRadarPrefabs;*/
+
     public AllBubbleData abData = new AllBubbleData();
 
 
     // Start is called before the first frame update
     void Start()
     {
-        ReadFromFile();
+        SaveToJson();
+       // ReadFromFile();
+
+  
+
         CreateBubbles();
         //  PopulateListForPeopleAndEmotions();
 
@@ -58,30 +62,18 @@ public class Bubble : MonoBehaviour
             PressableButton btn = buttonPrefabs[i].GetComponent<PressableButton>();
             btn.ButtonPressed.AddListener(() => SaveButtonToList(btn));
         }
-        
 
 
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
         {
             abData.bubbleDatas[i].people = AvoidDuplicatesInList(abData.bubbleDatas[i].people);
             abData.bubbleDatas[i].emotions = AvoidDuplicatesInList(abData.bubbleDatas[i].emotions);
-            bubblePrefabs[i].transform.Find("VertexExtrusion/Placard/Label").gameObject.name = abData.bubbleDatas[i].Moment;
-            // should update the text mesh text 
-            //   bubblePrefabs[i].transform.Find("VertexExtrusion/Placard/Label").gameObject.GetComponent<TextMesh>().text = abData.bubbleDatas[i].Moment;
-            //  bubblePrefabs[i].transform.Find("VertexExtrusion/Placard/Label").gameObject.GetComponent<TextMesh>().text = abData.bubbleDatas[i].Moment;
-            // bubblePrefabs[i].transform.Find("VertexExtrusion/Placard/Label").gameObject.GetComponent<TextMesh>().text = abData.bubbleDatas[i].Moment;
-            // bubblePrefabs[i].transform.Find("Label Canvas/Label").GetComponent<TextMeshProUGUI>().text = abData.bubbleDatas[i].Moment;
-        }
+            bubblePrefabs[i].GetComponentInChildren<TextMesh>().text = abData.bubbleDatas[i].Moment;
+       }
 
 
 
-        //PopulateListForPeopleAndEmotions();
 
-        /*       for (int i = 0; i < buttonPrefabs.Count; i++)
-               {
-                   BubbleData bubbleData = abData.bubbleDatas[i];
-                 //  SaveButtonValueToJson(bubbleData, currentRadarPrefabs[i]);
-               }*/
     }
 
     //once on clicked, save to people list in the json 
@@ -91,26 +83,6 @@ public class Bubble : MonoBehaviour
         Debug.Log("clicked");
 
     }
-
-
-    // randomize the bubble positions 
-    // only show category when the ball is clicked/ collided 
-
-
-    // category PEOPLE showing - button - build the ui the same 
-    // category EMOTIONS showing - button - build the ui the same 
-
-    // avoid duplicates 
-
-    // set up a button 
-    public void ClearTheList()
-    {
-
-        // a button to clear the list to edit 
-
-
-    }
-
     public List<string> AvoidDuplicatesInList(List<string> list)
     {
         return list.Distinct().ToList();
@@ -130,9 +102,6 @@ public class Bubble : MonoBehaviour
             button.gameObject.name = parentName + " " + buttonText.text;
             List<string> thePeople = abData.bubbleDatas[i].people;
             List<string> theEmotions = abData.bubbleDatas[i].emotions;
-
-            //find out the parent name or the button name 
-         //  Debug.Log($"button name is {button.name}, bubble string is {bubbleString}, parent name is {parentName}");
 
             if (parentName.Contains(bubbleString) || parentName.Contains("People"))
             {
@@ -224,7 +193,7 @@ public class Bubble : MonoBehaviour
             float angle = i * Mathf.PI * 2f / abData.bubbleDatas.Count;
 
             Vector3 newPos = new Vector3(Mathf.Cos(angle) * radius, floorPosition, Mathf.Sin(angle) * radius);
-            GameObject go = Instantiate(bubblePrefab, newPos, Quaternion.identity, this.transform);
+            GameObject go = Instantiate(bubblePrefab, newPos, Quaternion.identity, momentVisuals.transform);
 
 
             //  GameObject go = Instantiate(bubblePrefab, this.transform);
@@ -240,7 +209,7 @@ public class Bubble : MonoBehaviour
             moment.moveThreshold = momentMoveThreshold;
         }
 
-        SendBubblesToGraphPosition();
+       // SendBubblesToGraphPosition();
 
     }
 

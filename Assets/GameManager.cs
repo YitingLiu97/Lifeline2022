@@ -43,6 +43,21 @@ public class GameManager : MonoBehaviour
 
     public void StateHandler()
     {
+     /*   switch (currentState) {
+            case GameState.Initial:
+                CheckandPlay();
+                Logo.SetActive(true);
+                Graph.SetActive(false);
+                Moments.SetActive(true);
+                Chair.SetActive(false);
+                EmotionWheel.SetActive(false);
+                EMDR.SetActive(false);
+                break;
+
+        
+        
+        
+        }*/
         if (currentState == GameState.Initial)
         {
             CheckandPlay();
