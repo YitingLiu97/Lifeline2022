@@ -1525,7 +1525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6297045584192976714, guid: 7c6e73d77604ff346990b8bf331fe38a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6297045584192976714, guid: 7c6e73d77604ff346990b8bf331fe38a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1582,8 +1582,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3449303763257342722, guid: c067ab47c8b85934ca24f0461d05b1eb, type: 3}
       propertyPath: zOffset
-      value: 0.5
+      value: -0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3449303763257342722, guid: c067ab47c8b85934ca24f0461d05b1eb, type: 3}
+      propertyPath: chairPos
+      value: 
+      objectReference: {fileID: 2064335968}
     - target: {fileID: 3745718188971152012, guid: c067ab47c8b85934ca24f0461d05b1eb, type: 3}
       propertyPath: m_Name
       value: TheChair

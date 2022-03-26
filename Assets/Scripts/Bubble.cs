@@ -215,7 +215,6 @@ public class Bubble : MonoBehaviour
     {
         //Start highest age at 0
         int highestAge = 0;
-                
 
         //loop through all bubble data
         foreach (BubbleData oneBubble in abData.bubbleDatas)
