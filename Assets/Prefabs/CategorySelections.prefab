@@ -315,10 +315,10 @@ MonoBehaviour:
   categorySelection: {fileID: 961481230747828508}
   peopleGroup: {fileID: 961481230248628694}
   emotionGroup: {fileID: 961481231398380670}
-  finishedPeople: {fileID: 5044590497241150029}
-  finishedEmotion: {fileID: 943932698022883515}
+  finishedPeople: {fileID: 0}
+  finishedEmotion: {fileID: 0}
   deepDive: 1
-  finishedPeopleClicked: 0
+  finishedPeopleClicked: 1
   finishedEmotionClicked: 0
 --- !u!1 &961481231398380670
 GameObject:

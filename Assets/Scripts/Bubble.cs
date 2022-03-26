@@ -7,7 +7,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using System.Linq;
-
+using Microsoft.MixedReality.Toolkit.UI;
 
 public class Bubble : MonoBehaviour
 {
@@ -54,8 +54,8 @@ public class Bubble : MonoBehaviour
 
         for (int i = 0; i < buttonPrefabs.Count; i++)
         {
-            Button btn = buttonPrefabs[i].GetComponent<Button>();
-            btn.onClick.AddListener(() => OnClicked(btn));
+            PressableButton btn = buttonPrefabs[i].GetComponent<PressableButton>();
+            btn.ButtonPressed.AddListener(() => OnClicked(btn));
         }
 
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
@@ -113,7 +113,7 @@ public class Bubble : MonoBehaviour
         return list.Distinct().ToList();
 
     }
-    public void OnClicked(Button button)
+    public void OnClicked(PressableButton button)
     {
 
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
@@ -323,37 +323,8 @@ public class Bubble : MonoBehaviour
 
     }
 
-    // dummy key to drag the bubbble 
-    // just focus on one bubble for now 
 
-    // show the category selections 
-    // show people 
-    // once clicked finished people 
-    // show emotions 
-    // once clicked the finished emotions 
-    // turn category off, show the bubble again 
-
-
-    // if category is selected 
-    void CategorySelectionProcess(Canvas categorySelection, GameObject peopleGroup, GameObject emotionGroup)
-    {
-
-        Button finishedPeople, finishedEmotion;
-
-        peopleGroup.SetActive(true);
-        emotionGroup.SetActive(true);
-
-        if (!categorySelection.gameObject.activeSelf)
-        {
-            categorySelection.gameObject.SetActive(!categorySelection.gameObject.activeSelf);
-        }
-
-
-
-
-
-
-    }
+   
 
     void Update()
     {
