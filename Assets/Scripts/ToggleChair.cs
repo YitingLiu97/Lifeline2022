@@ -22,9 +22,9 @@ public class ToggleChair : MonoBehaviour
     private void MoveChair()
     {
         Vector3 tempPos = player.transform.position;
-        tempPos.z += zOffset;
+    /*    tempPos.z += zOffset;
         tempPos.x += xOffset;
-        tempPos.y += yOffset;
+        tempPos.y += yOffset;*/
         gameObject.transform.position = tempPos;
 
         chairPos.position += new Vector3(distance, 0, 0);
