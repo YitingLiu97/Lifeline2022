@@ -88,3 +88,5 @@ MonoBehaviour:
       age: 22
       people: []
       emotions: []
+  radius: 2
+  floorPosition: 0
