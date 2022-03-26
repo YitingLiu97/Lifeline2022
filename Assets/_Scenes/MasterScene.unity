@@ -637,7 +637,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2722896806718886375, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
       propertyPath: m_Name
-      value: PalmUpHandMenu_Side_1x3
+      value: OurPalmMenu
       objectReference: {fileID: 0}
     - target: {fileID: 2722896807957518662, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
       propertyPath: m_Mesh
@@ -655,14 +655,10 @@ PrefabInstance:
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 2037856855}
-    - target: {fileID: 4794825850777700425, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
-      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: ToggleTheChair
-      objectReference: {fileID: 0}
-    - target: {fileID: 4794825850777700425, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
-      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: ToggleChair, Assembly-CSharp
-      objectReference: {fileID: 0}
+    - target: {fileID: 5763226794020375763, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+      propertyPath: iconSet
+      value: 
+      objectReference: {fileID: 11400000, guid: 8b386ef895f7c924f8c4b03d1d3ed683, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
 --- !u!1 &920416052
