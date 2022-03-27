@@ -204,17 +204,18 @@ public class Bubble : MonoBehaviour
             moment.moveThreshold = momentMoveThreshold;
         }
 
-       // SendBubblesToGraphPosition();
 
     }
 
     public float bubbleTransitionSpeed = 1f;
     // should map the age to the timeline and set the transform for the bubble individually     
     // assign that to the position of the bubble in the world 
-    void SendBubblesToGraphPosition()
+    public void SendBubblesToGraphPosition()
     {
+        Debug.Log("Sending to graph");
+
         //Start highest age at 0
-        int highestAge = 0;
+        int highestAge = 0;                
 
         //loop through all bubble data
         foreach (BubbleData oneBubble in abData.bubbleDatas)
@@ -227,6 +228,7 @@ public class Bubble : MonoBehaviour
 
         }
 
+
         //get the length of the line, using workaround of start and end position objects
         float xAxisLength = GraphManager.Instance.graphEnd.position.x - GraphManager.Instance.graphStart.position.x;
 
@@ -234,7 +236,7 @@ public class Bubble : MonoBehaviour
         float xIncrement = xAxisLength / highestAge;
 
         //get the length of y axis based on capsule collider
-        float yAxisLength = GraphManager.Instance.yAxis.GetComponent<CapsuleCollider>().height;
+        float yAxisLength = GraphManager.Instance.graphTop.position.y - GraphManager.Instance.graphBottom.position.y;
 
         //calc distance between intensity amounts
         float yIncrement = yAxisLength / GraphManager.Instance.intensityScale;
@@ -246,7 +248,7 @@ public class Bubble : MonoBehaviour
             Moment currentMoment = bubblePrefabs[i].gameObject.GetComponent<Moment>();
 
             // Positions are calculated by age/impact multiplied by increments
-            float xPosition = abData.bubbleDatas[i].age * xIncrement;
+            float xPosition = (abData.bubbleDatas[i].age-5) * xIncrement;
             float yPosition = abData.bubbleDatas[i].impactValue * yIncrement;
 
             //create position, z is 0

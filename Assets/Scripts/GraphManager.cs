@@ -6,7 +6,7 @@ public class GraphManager : MonoBehaviour
 {
     public static GraphManager Instance;
 
-    public Transform graphPosition, graphStart, graphEnd;
+    public Transform graphPosition, graphStart, graphEnd, graphTop, graphBottom;
     public GameObject xAxis;
     public GameObject yAxis;
     public int intensityScale = 21;

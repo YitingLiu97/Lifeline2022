@@ -84,8 +84,14 @@ public class CameraPositionTracker : MonoBehaviour
                     breatheOut.SetActive(false);
 
                     //TODO: Change to new game state
-                    countdownText.text = $"Transition";
+                    countdownText.gameObject.SetActive(false);
+
+                    GameManager.Instance.currentState = GameManager.GameState.Analysis;
+                    GameManager.Instance.StateHandler();
+                    state = 5;
                 }
+                break;
+            case 5:
                 break;
         }
 

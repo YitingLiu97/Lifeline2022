@@ -2817,8 +2817,8 @@ MonoBehaviour:
   categorySelection: {fileID: 5578874276101630748}
   peopleGroup: {fileID: 5578874277724748758}
   emotionGroup: {fileID: 5578874276724903550}
-  finishedPeople: {fileID: 448678642762553421}
-  finishedEmotion: {fileID: 5558144824004287163}
+  finishedPeople: {fileID: 0}
+  finishedEmotion: {fileID: 0}
   deepDive: 0
   finishedPeopleClicked: 0
   finishedEmotionClicked: 0

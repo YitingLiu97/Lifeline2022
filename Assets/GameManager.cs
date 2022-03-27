@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject EMDR;
     [SerializeField] GameObject EmotionWheel;
     [SerializeField] AudioSource Music;
+    [SerializeField] Bubble Bubble;
+
     [SerializeField] int loadSeconds = 3;
 
     private void Awake()
@@ -84,6 +86,7 @@ public class GameManager : MonoBehaviour
         }
         else if (currentState == GameState.Analysis)
         {
+            Bubble.SendBubblesToGraphPosition();
             CheckandPlay();
             Logo.SetActive(false);
             Graph.SetActive(true);
