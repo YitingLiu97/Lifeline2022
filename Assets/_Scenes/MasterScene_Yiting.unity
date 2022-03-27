@@ -882,12 +882,32 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4794825850777700425, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794825850777700425, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4794825850777700425, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2037856855}
+      objectReference: {fileID: 964214519}
+    - target: {fileID: 4794825850777700425, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794825850777700425, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: EmotionHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794825850777700425, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: EmotionButton, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4794825850777700425, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7839475617179937059, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -953,6 +973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 964214518}
+  - component: {fileID: 964214519}
   m_Layer: 0
   m_Name: EmotionWheel
   m_TagString: Untagged
@@ -975,6 +996,18 @@ Transform:
   m_Father: {fileID: 363920122}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &964214519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964214517}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abd5ebf2d119f514796a0498c680cc08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &984104464
 PrefabInstance:
   m_ObjectHideFlags: 0
