@@ -52,10 +52,11 @@ public class Bubble : MonoBehaviour
         CreateBubbles();
         //  PopulateListForPeopleAndEmotions();
 
+
         for (int i = 0; i < buttonPrefabs.Count; i++)
         {
             PressableButton btn = buttonPrefabs[i].GetComponent<PressableButton>();
-            btn.ButtonPressed.AddListener(() => OnClicked(btn));
+            btn.ButtonPressed.AddListener(() => SaveButtonToList(btn));
         }
 
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
@@ -113,21 +114,25 @@ public class Bubble : MonoBehaviour
         return list.Distinct().ToList();
 
     }
-    public void OnClicked(PressableButton button)
+
+    public void SaveButtonToList(PressableButton button)
     {
 
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
         {
             string bubbleString = abData.bubbleDatas[i].Moment;
-            string parentName = button.GetComponentInParent<GridLayoutGroup>().gameObject.name;
-            button.name = EventSystem.current.currentSelectedGameObject.GetComponentInChildren<TextMeshProUGUI>().text;
+            string parentName = button.gameObject.transform.parent.name;
+            TextMeshProUGUI buttonText = button.gameObject.GetComponentInChildren<TextMeshProUGUI>();
+
+            button.name = buttonText.text;
+            button.gameObject.name = parentName + " " + buttonText.text;
             List<string> thePeople = abData.bubbleDatas[i].people;
             List<string> theEmotions = abData.bubbleDatas[i].emotions;
 
             //find out the parent name or the button name 
             //Debug.Log($"button name is {button.name}, bubble string is {bubbleString}, parent name is {parentName}");
 
-            if (parentName.Contains(bubbleString) && parentName.Contains("People"))
+            if (parentName.Contains(bubbleString) || parentName.Contains("People"))
             {
                 if (!thePeople.Contains(button.name))
                 {
@@ -138,7 +143,7 @@ public class Bubble : MonoBehaviour
                 Debug.Log("people list is " + thePeople.Count);
             }
 
-            if (parentName.Contains(bubbleString) && parentName.Contains("Emotions"))
+            if (parentName.Contains(bubbleString) || parentName.Contains("Emotions"))
             {
                 if (!theEmotions.Contains(button.name))
                 {
@@ -151,6 +156,9 @@ public class Bubble : MonoBehaviour
 
             }
         }
+
+
+        // show button list in bubble - figure out to show the text 
 
         SaveToJson();
     }
@@ -210,13 +218,13 @@ public class Bubble : MonoBehaviour
     {
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
         {
-            float angle = i * Mathf.PI*2f / abData.bubbleDatas.Count;
-           
+            float angle = i * Mathf.PI * 2f / abData.bubbleDatas.Count;
+
             Vector3 newPos = new Vector3(Mathf.Cos(angle) * radius, floorPosition, Mathf.Sin(angle) * radius);
             GameObject go = Instantiate(bubblePrefab, newPos, Quaternion.identity, this.transform);
 
 
-          //  GameObject go = Instantiate(bubblePrefab, this.transform);
+            //  GameObject go = Instantiate(bubblePrefab, this.transform);
             go.name = abData.bubbleDatas[i].Moment;
             bubblePrefabs.Add(go);
             bubblePrefabs[i].transform.Find("CategorySelections/People").gameObject.name += " " + go.name;
@@ -240,7 +248,7 @@ public class Bubble : MonoBehaviour
         foreach (BubbleData oneBubble in abData.bubbleDatas)
         {
             //if age is higher than highest age, set highest age to new value
-            if(oneBubble.age > highestAge)
+            if (oneBubble.age > highestAge)
             {
                 highestAge = oneBubble.age;
             }
@@ -329,7 +337,7 @@ public class Bubble : MonoBehaviour
     }
 
 
-   
+
 
     void Update()
     {
@@ -338,18 +346,6 @@ public class Bubble : MonoBehaviour
             SaveToJson();
         }
 
-        // dummy key to drag the bubbble 
-        // just focus on one bubble for now 
-        if (Input.GetKeyDown(KeyCode.B))
-        {
-            // show the category selections 
-            // show people 
-            // once clicked finished people 
-            // show emotions 
-            // once clicked the finished emotions 
-            // turn category off, show the bubble again 
-
-
-        }
+     
     }
 }

@@ -3977,7 +3977,7 @@ GameObject:
   - component: {fileID: 9011946383846707206}
   - component: {fileID: 5910691658133059744}
   m_Layer: 0
-  m_Name: Bubble Testing UI
+  m_Name: Bubble Testing UI_Old
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
