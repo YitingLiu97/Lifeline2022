@@ -19,6 +19,8 @@ public class Bubble : MonoBehaviour
         [Range(-10, 10)]
         public int impactValue;
         public int age;
+        [Range(-10, 10)]
+        public int physicalWellbeing;
         public List<string> people = new List<string>();
         public List<string> emotions = new List<string>();
     }
