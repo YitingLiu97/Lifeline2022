@@ -19,4 +19,10 @@ public class EMDR : MonoBehaviour
     {
         
     }
+
+    public void EmdrHandler()
+    {
+        GameManager.Instance.currentState = GameManager.GameState.Emdr;
+        GameManager.Instance.StateHandler();
+    }
 }

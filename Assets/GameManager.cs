@@ -22,10 +22,13 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject Chair;
     [SerializeField] GameObject EMDR;
     [SerializeField] GameObject EmotionWheel;
+    [SerializeField] AudioSource Music;
+
 
     private void Awake()
     {
-        _instance = this;   
+        _instance = this;
+        Music.Play();
     }
 
     public enum GameState { Initial, Transition, Analysis, Discovery, Emdr, ChairOnly, EmotionOnly}
@@ -35,13 +38,29 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.Initial;
         StateHandler();
+        
     }
 
     public void StateHandler()
     {
+     /*   switch (currentState) {
+            case GameState.Initial:
+                CheckandPlay();
+                Logo.SetActive(true);
+                Graph.SetActive(false);
+                Moments.SetActive(true);
+                Chair.SetActive(false);
+                EmotionWheel.SetActive(false);
+                EMDR.SetActive(false);
+                break;
+
+        
+        
+        
+        }*/
         if (currentState == GameState.Initial)
         {
-            //turn everything else off except the logo and the moments, in their OG position
+            CheckandPlay();
             Logo.SetActive(true);
             Graph.SetActive(false);
             Moments.SetActive(true);
@@ -52,6 +71,7 @@ public class GameManager : MonoBehaviour
         }
         else if(currentState == GameState.Transition)
         {
+            CheckandPlay();
             Logo.SetActive(false);
             Graph.SetActive(false);
             Moments.SetActive(true);
@@ -61,6 +81,7 @@ public class GameManager : MonoBehaviour
         }
         else if (currentState == GameState.Analysis)
         {
+            CheckandPlay();
             Logo.SetActive(false);
             Graph.SetActive(true);
             Moments.SetActive(true);
@@ -71,6 +92,7 @@ public class GameManager : MonoBehaviour
         else if (currentState == GameState.Discovery)
         {
             //one moment for discovery
+            CheckandPlay();
             Logo.SetActive(false);
             Graph.SetActive(false);
             Moments.SetActive(false);
@@ -80,6 +102,8 @@ public class GameManager : MonoBehaviour
         }
         else if (currentState == GameState.ChairOnly)
         {
+
+            CheckandPlay();
             Logo.SetActive(false);
             Graph.SetActive(false);
             Moments.SetActive(false);
@@ -89,6 +113,7 @@ public class GameManager : MonoBehaviour
         }
         else if (currentState == GameState.Emdr)
         {
+            Music.Pause();
             Logo.SetActive(false);
             Graph.SetActive(false);
             Moments.SetActive(false);
@@ -98,12 +123,21 @@ public class GameManager : MonoBehaviour
         }
         else if (currentState == GameState.EmotionOnly)
         {
+            CheckandPlay();
             Logo.SetActive(false);
             Graph.SetActive(false);
             Moments.SetActive(false);
             Chair.SetActive(false);
             EmotionWheel.SetActive(true);
             EMDR.SetActive(false);
+        }
+    }
+
+    private void CheckandPlay()
+    {
+        if (!Music.isPlaying)
+        {
+            Music.Play();
         }
     }
 

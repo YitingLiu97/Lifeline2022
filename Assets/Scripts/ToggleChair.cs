@@ -10,26 +10,20 @@ public class ToggleChair : MonoBehaviour
     [SerializeField] float xOffset = 2;
     [SerializeField] float yOffset = -2;
 
-    private bool isActive = false;
-
-
-    public void ToggleTheChair()
+    public void ChairHandler()
     {
-        if (!isActive)
-        {
-            Vector3 tempPos = player.transform.position;
-            tempPos.y = 0;
-            tempPos.z += zOffset;
-            tempPos.x += xOffset;
-            gameObject.transform.position = tempPos;
-            gameObject.SetActive(true);
-            isActive = true;
-        }
-        else
-        {
-            gameObject.SetActive(false);
-            isActive = false;
-        }
-    }   
+        GameManager.Instance.currentState = GameManager.GameState.ChairOnly;
+        GameManager.Instance.StateHandler();
+        MoveChair();
+    }
+    
+    private void MoveChair()
+    {
+        Vector3 tempPos = player.transform.position;
+        tempPos.z += zOffset;
+        tempPos.x += xOffset;
+        tempPos.y += yOffset;
+        gameObject.transform.position = tempPos;
+    }
 
 }
