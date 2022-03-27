@@ -1,0 +1,3132 @@
+fileFormatVersion: 2
+guid: abbc619ea28ff45b499749e9737911db
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5100043205493555691
+    second: logo life line.._0
+  - first:
+      213: 5987428717036909136
+    second: logo life line.._1
+  - first:
+      213: -62817599779344425
+    second: logo life line.._2
+  - first:
+      213: 3033188768366565396
+    second: logo life line.._3
+  - first:
+      213: 9147691734847733165
+    second: logo life line.._4
+  - first:
+      213: 5117573620211533429
+    second: logo life line.._5
+  - first:
+      213: -525825780514400566
+    second: logo life line.._6
+  - first:
+      213: 6215629971071328704
+    second: logo life line.._7
+  - first:
+      213: 7583723965234971435
+    second: logo life line.._8
+  - first:
+      213: 6594286192986014558
+    second: logo life line.._9
+  - first:
+      213: -4486002336359896203
+    second: logo life line.._10
+  - first:
+      213: -2212601267111160536
+    second: logo life line.._11
+  - first:
+      213: -2847766033316111935
+    second: logo life line.._12
+  - first:
+      213: -5509015048864748686
+    second: logo life line.._13
+  - first:
+      213: -2398593939195002202
+    second: logo life line.._14
+  - first:
+      213: -4815901144190307599
+    second: logo life line.._15
+  - first:
+      213: 5681922415750402742
+    second: logo life line.._16
+  - first:
+      213: 2633203304543957596
+    second: logo life line.._17
+  - first:
+      213: 7803236544953195255
+    second: logo life line.._18
+  - first:
+      213: -2732737816138078250
+    second: logo life line.._19
+  - first:
+      213: -6354203125286066914
+    second: logo life line.._20
+  - first:
+      213: 5140981165199487148
+    second: logo life line.._21
+  - first:
+      213: -131205154921218397
+    second: logo life line.._22
+  - first:
+      213: 5982087569970932425
+    second: logo life line.._23
+  - first:
+      213: 7169678310234106828
+    second: logo life line.._24
+  - first:
+      213: 2568601693710578830
+    second: logo life line.._25
+  - first:
+      213: -3452389621545651663
+    second: logo life line.._26
+  - first:
+      213: -3588836688826554772
+    second: logo life line.._27
+  - first:
+      213: -232243743619520071
+    second: logo life line.._28
+  - first:
+      213: 5038925602544258555
+    second: logo life line.._29
+  - first:
+      213: 8028578806793967402
+    second: logo life line.._30
+  - first:
+      213: 2577811963480215635
+    second: logo life line.._31
+  - first:
+      213: -6472140441717119771
+    second: logo life line.._32
+  - first:
+      213: 2821500427102027283
+    second: logo life line.._33
+  - first:
+      213: -8165904775463037294
+    second: logo life line.._34
+  - first:
+      213: 2905550208001235781
+    second: logo life line.._35
+  - first:
+      213: 8256739441611437255
+    second: logo life line.._36
+  - first:
+      213: 2602849263400693580
+    second: logo life line.._37
+  - first:
+      213: -6841613690991955096
+    second: logo life line.._38
+  - first:
+      213: -7219033110036804267
+    second: logo life line.._39
+  - first:
+      213: 5403782189740502572
+    second: logo life line.._40
+  - first:
+      213: -8478318687148134715
+    second: logo life line.._41
+  - first:
+      213: -521190184929919541
+    second: logo life line.._42
+  - first:
+      213: 2646962727673510932
+    second: logo life line.._43
+  - first:
+      213: -5844761830095551234
+    second: logo life line.._44
+  - first:
+      213: 1841555196676861689
+    second: logo life line.._45
+  - first:
+      213: -5224160426568013026
+    second: logo life line.._46
+  - first:
+      213: 4523899412459948601
+    second: logo life line.._47
+  - first:
+      213: -5326380292299280566
+    second: logo life line.._48
+  - first:
+      213: 7716604636194778030
+    second: logo life line.._49
+  - first:
+      213: 354053062332867786
+    second: logo life line.._50
+  - first:
+      213: -5157021465847877604
+    second: logo life line.._51
+  - first:
+      213: 4079965116925124846
+    second: logo life line.._52
+  - first:
+      213: 4211933718544206342
+    second: logo life line.._53
+  - first:
+      213: 4315483187186149380
+    second: logo life line.._54
+  - first:
+      213: 7955376771943312946
+    second: logo life line.._55
+  - first:
+      213: -1016225156623642836
+    second: logo life line.._56
+  - first:
+      213: 1899058571055271351
+    second: logo life line.._57
+  - first:
+      213: 6122305353029065329
+    second: logo life line.._58
+  - first:
+      213: -2321195997722664544
+    second: logo life line.._59
+  - first:
+      213: 1644853739184573723
+    second: logo life line.._60
+  - first:
+      213: -7014679159092361263
+    second: logo life line.._61
+  - first:
+      213: -8866723275271243046
+    second: logo life line.._62
+  - first:
+      213: -2860697844146417168
+    second: logo life line.._63
+  - first:
+      213: 4047333479269780015
+    second: logo life line.._64
+  - first:
+      213: 6011365037374248440
+    second: logo life line.._65
+  - first:
+      213: 9056622393056306602
+    second: logo life line.._66
+  - first:
+      213: 3647801905269883036
+    second: logo life line.._67
+  - first:
+      213: -497567154197005454
+    second: logo life line.._68
+  - first:
+      213: 8748226993149473955
+    second: logo life line.._69
+  - first:
+      213: -5916641582725893627
+    second: logo life line.._70
+  - first:
+      213: -3190711428861855753
+    second: logo life line.._71
+  - first:
+      213: -4029041079442534739
+    second: logo life line.._72
+  - first:
+      213: 8911667405594255424
+    second: logo life line.._73
+  - first:
+      213: 8826145565782784558
+    second: logo life line.._74
+  - first:
+      213: 5934787374020136577
+    second: logo life line.._75
+  - first:
+      213: -7816693820035925012
+    second: logo life line.._76
+  - first:
+      213: 2058436532842597629
+    second: logo life line.._77
+  - first:
+      213: -5445418744903300751
+    second: logo life line.._78
+  - first:
+      213: 4972099453703182473
+    second: logo life line.._79
+  - first:
+      213: 134327771088945871
+    second: logo life line.._80
+  - first:
+      213: -2039042159003502097
+    second: logo life line.._81
+  - first:
+      213: 9133528960790224703
+    second: logo life line.._82
+  - first:
+      213: 859931146403324407
+    second: logo life line.._83
+  - first:
+      213: 4611956030471301655
+    second: logo life line.._84
+  - first:
+      213: -7560559222347996153
+    second: logo life line.._85
+  - first:
+      213: 2515076416267712183
+    second: logo life line.._86
+  - first:
+      213: 105596199502952878
+    second: logo life line.._87
+  - first:
+      213: -7592273305925657578
+    second: logo life line.._88
+  - first:
+      213: 8845570580514908679
+    second: logo life line.._89
+  - first:
+      213: -2487587287876845137
+    second: logo life line.._90
+  - first:
+      213: 235334978379284407
+    second: logo life line.._91
+  - first:
+      213: 6165652718791715667
+    second: logo life line.._92
+  - first:
+      213: -3432640811745736057
+    second: logo life line.._93
+  - first:
+      213: -4428463730307032898
+    second: logo life line.._94
+  - first:
+      213: 5207869063511011944
+    second: logo life line.._95
+  - first:
+      213: 7915540505691032460
+    second: logo life line.._96
+  - first:
+      213: -4597044370172768736
+    second: logo life line.._97
+  - first:
+      213: 6823949107522063550
+    second: logo life line.._98
+  - first:
+      213: -557334718785306842
+    second: logo life line.._99
+  - first:
+      213: -4911293411954007032
+    second: logo life line.._100
+  - first:
+      213: -7615065287341564563
+    second: logo life line.._101
+  - first:
+      213: -9163127949438188047
+    second: logo life line.._102
+  - first:
+      213: 1038284700746714429
+    second: logo life line.._103
+  - first:
+      213: -4559960351496933803
+    second: logo life line.._104
+  - first:
+      213: 8461064879239146546
+    second: logo life line.._105
+  - first:
+      213: 4624069741290061921
+    second: logo life line.._106
+  - first:
+      213: -3023612114457197140
+    second: logo life line.._107
+  - first:
+      213: -7789415646213160277
+    second: logo life line.._108
+  - first:
+      213: 3404160982600402022
+    second: logo life line.._109
+  - first:
+      213: 11633647550892769
+    second: logo life line.._110
+  - first:
+      213: 3758288550035313272
+    second: logo life line.._111
+  - first:
+      213: 2915937993904132824
+    second: logo life line.._112
+  - first:
+      213: 4416278127782964862
+    second: logo life line.._113
+  - first:
+      213: 7511907415467946613
+    second: logo life line.._114
+  - first:
+      213: 5674644263023481608
+    second: logo life line.._115
+  - first:
+      213: 3288198734034184462
+    second: logo life line.._116
+  - first:
+      213: 7790659286539725317
+    second: logo life line.._117
+  - first:
+      213: 2459944073578090777
+    second: logo life line.._118
+  - first:
+      213: 1077557677450399455
+    second: logo life line.._119
+  - first:
+      213: -6688172936580401767
+    second: logo life line.._120
+  - first:
+      213: -1149487977945577934
+    second: logo life line.._121
+  - first:
+      213: -4337858704992366450
+    second: logo life line.._122
+  - first:
+      213: 8135581224551821381
+    second: logo life line.._123
+  - first:
+      213: -6101891082299427826
+    second: logo life line.._124
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: logo life line.._0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 8046
+        width: 433
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be18692364ef6c640800000000000000
+      internalID: 5100043205493555691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._1
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 8046
+        width: 435
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05235f402be971350800000000000000
+      internalID: 5987428717036909136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._2
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 8046
+        width: 433
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df628fc9b3d02ff0800000000000000
+      internalID: -62817599779344425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._3
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 8046
+        width: 433
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41891334d1d081a20800000000000000
+      internalID: 3033188768366565396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._4
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 8046
+        width: 434
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad30629a2123fe70800000000000000
+      internalID: 9147691734847733165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._5
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 7711
+        width: 434
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5764e90f716450740800000000000000
+      internalID: 5117573620211533429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._6
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 7711
+        width: 437
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac652b21d34e3b8f0800000000000000
+      internalID: -525825780514400566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._7
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 7711
+        width: 437
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c16af0e68a524650800000000000000
+      internalID: 6215629971071328704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._8
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 7711
+        width: 433
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b23827e14ccce3960800000000000000
+      internalID: 7583723965234971435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._9
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 7711
+        width: 434
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e53c130ca5c938b50800000000000000
+      internalID: 6594286192986014558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._10
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 7375
+        width: 434
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57b22b794a48eb1c0800000000000000
+      internalID: -4486002336359896203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._11
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 7375
+        width: 437
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8259244ded24b41e0800000000000000
+      internalID: -2212601267111160536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._12
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 7375
+        width: 437
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c915cc71e3ba78d0800000000000000
+      internalID: -2847766033316111935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._13
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 7375
+        width: 433
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ba226400c0c83b0800000000000000
+      internalID: -5509015048864748686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._14
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 7375
+        width: 434
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a280e5458b76bed0800000000000000
+      internalID: -2398593939195002202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._15
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 7040
+        width: 434
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2b323dc6b7a2db0800000000000000
+      internalID: -4815901144190307599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._16
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 7040
+        width: 437
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b2d120455e3ade40800000000000000
+      internalID: 5681922415750402742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._17
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 7040
+        width: 437
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c523ab444740b8420800000000000000
+      internalID: 2633203304543957596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._18
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 7040
+        width: 437
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fa18485b4aaa4c60800000000000000
+      internalID: 7803236544953195255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._19
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 7040
+        width: 438
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d720d45f6d531ad0800000000000000
+      internalID: -2732737816138078250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._20
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6705
+        width: 438
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15a5ae6ce551d7a0800000000000000
+      internalID: -6354203125286066914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._21
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 6705
+        width: 437
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca070b4b12f685740800000000000000
+      internalID: 5140981165199487148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._22
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 6705
+        width: 437
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ae78345b9ddd2ef0800000000000000
+      internalID: -131205154921218397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._23
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 6705
+        width: 437
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9caa56f43f4a40350800000000000000
+      internalID: 5982087569970932425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._24
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 6705
+        width: 438
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccba353cf60df7360800000000000000
+      internalID: 7169678310234106828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._25
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6369
+        width: 442
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84f513a1a185a320800000000000000
+      internalID: 2568601693710578830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._26
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 6369
+        width: 441
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 132b6854ee5a610d0800000000000000
+      internalID: -3452389621545651663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._27
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 6369
+        width: 441
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c66aa95cb04e13ec0800000000000000
+      internalID: -3588836688826554772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._28
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 6369
+        width: 437
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b96040bb87e6ccf0800000000000000
+      internalID: -232243743619520071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._29
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 6369
+        width: 438
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd854d532cdde540800000000000000
+      internalID: 5038925602544258555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6034
+        width: 442
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a271f2633ed3b6f60800000000000000
+      internalID: 8028578806793967402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._31
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 6035
+        width: 441
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3509dfca25a36c320800000000000000
+      internalID: 2577811963480215635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._32
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 6035
+        width: 441
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4e2032f865e26a0800000000000000
+      internalID: -6472140441717119771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._33
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 6035
+        width: 441
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31e770380bbf72720800000000000000
+      internalID: 2821500427102027283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._34
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 6034
+        width: 442
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2961cdc1fd0ecae80800000000000000
+      internalID: -8165904775463037294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._35
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 5703
+        width: 442
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54bd9f81586925820800000000000000
+      internalID: 2905550208001235781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._36
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 5703
+        width: 441
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4f43ca6c4d59270800000000000000
+      internalID: 8256739441611437255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._37
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 5703
+        width: 441
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fa2e45d9d2f1420800000000000000
+      internalID: 2602849263400693580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._38
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 5703
+        width: 441
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 863b9f1b894bd01a0800000000000000
+      internalID: -6841613690991955096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._39
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 5703
+        width: 442
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d097e62a7d0db90800000000000000
+      internalID: -7219033110036804267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._40
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 5367
+        width: 446
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ea01765471efa40800000000000000
+      internalID: 5403782189740502572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._41
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 5367
+        width: 445
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ceaaf7f216f65a80800000000000000
+      internalID: -8478318687148134715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._42
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 5367
+        width: 445
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcdf4d6c94c54c8f0800000000000000
+      internalID: -521190184929919541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._43
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 5367
+        width: 445
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cbdac9396ebb420800000000000000
+      internalID: 2646962727673510932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._44
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 5367
+        width: 446
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef48468151c33eea0800000000000000
+      internalID: -5844761830095551234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5032
+        width: 448
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fee234c1b48e8910800000000000000
+      internalID: 1841555196676861689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._46
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 5032
+        width: 446
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ba2c455cd0087b0800000000000000
+      internalID: -5224160426568013026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._47
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 5032
+        width: 445
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a06470c8e18ce30800000000000000
+      internalID: 4523899412459948601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._48
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 5032
+        width: 445
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4f2cd23855e416b0800000000000000
+      internalID: -5326380292299280566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._49
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 5032
+        width: 448
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaba5844803e61b60800000000000000
+      internalID: 7716604636194778030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4697
+        width: 452
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac46df36269d9e400800000000000000
+      internalID: 354053062332867786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._51
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 4697
+        width: 446
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c10b215cc449e68b0800000000000000
+      internalID: -5157021465847877604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._52
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4697
+        width: 447
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0ae4248a2fe9830800000000000000
+      internalID: 4079965116925124846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._53
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 4697
+        width: 449
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60a4157b66bc37a30800000000000000
+      internalID: 4211933718544206342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._54
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 4697
+        width: 448
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408a666281da3eb30800000000000000
+      internalID: 4315483187186149380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4361
+        width: 452
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e2312560d276e60800000000000000
+      internalID: 7955376771943312946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._56
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 4361
+        width: 450
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2fc1afaa94a5e1f0800000000000000
+      internalID: -1016225156623642836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._57
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 4361
+        width: 449
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd096f65bfca5a10800000000000000
+      internalID: 1899058571055271351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._58
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 4361
+        width: 449
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17a15cdf74cc6f450800000000000000
+      internalID: 6122305353029065329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._59
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 4361
+        width: 448
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1aeadc98479cfd0800000000000000
+      internalID: -2321195997722664544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4026
+        width: 452
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1dc19fc2c1b3d610800000000000000
+      internalID: 1644853739184573723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._61
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 4026
+        width: 450
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7c6fc587ad6ae90800000000000000
+      internalID: -7014679159092361263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._62
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 4026
+        width: 452
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adaf4c7b82213f480800000000000000
+      internalID: -8866723275271243046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._63
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 4026
+        width: 453
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f15de5a772cc48d0800000000000000
+      internalID: -2860697844146417168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._64
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 4026
+        width: 448
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2acb6f0b540b2830800000000000000
+      internalID: 4047333479269780015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3691
+        width: 452
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f515e3e6a8ac6350800000000000000
+      internalID: 6011365037374248440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._66
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 3691
+        width: 450
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa528fa15169fad70800000000000000
+      internalID: 9056622393056306602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._67
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 3691
+        width: 452
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90ca9681889f9230800000000000000
+      internalID: 3647801905269883036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._68
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 3691
+        width: 453
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b7f2a3f494819f0800000000000000
+      internalID: -497567154197005454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._69
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 3691
+        width: 448
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a47825a912f76970800000000000000
+      internalID: 8748226993149473955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._70
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3355
+        width: 452
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 502715604ddd3eda0800000000000000
+      internalID: -5916641582725893627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._71
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 3355
+        width: 450
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f7f8ed4cd058b3d0800000000000000
+      internalID: -3190711428861855753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._72
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 3355
+        width: 452
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae0f5a2c78f518c0800000000000000
+      internalID: -4029041079442534739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._73
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 3355
+        width: 453
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0406fd21a4a9cab70800000000000000
+      internalID: 8911667405594255424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._74
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 3355
+        width: 448
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2a3f5011a4cc7a70800000000000000
+      internalID: 8826145565782784558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3020
+        width: 452
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18e81fd3ca99c5250800000000000000
+      internalID: 5934787374020136577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._76
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 3020
+        width: 450
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ceb74c2a266858390800000000000000
+      internalID: -7816693820035925012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._77
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 3020
+        width: 452
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc05ccde19019c10800000000000000
+      internalID: 2058436532842597629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._78
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 3020
+        width: 453
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17909c8a08cfd64b0800000000000000
+      internalID: -5445418744903300751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._79
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 3020
+        width: 448
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98854ed1c12700540800000000000000
+      internalID: 4972099453703182473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._80
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2685
+        width: 452
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc20a37656a3dd100800000000000000
+      internalID: 134327771088945871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._81
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 2685
+        width: 450
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9fc8ea5fdd3b3e0800000000000000
+      internalID: -2039042159003502097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._82
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 2685
+        width: 452
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fd4a5c230d0ce70800000000000000
+      internalID: 9133528960790224703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._83
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 2685
+        width: 449
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f12aa052d61feb00800000000000000
+      internalID: 859931146403324407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._84
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 2685
+        width: 448
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71a66f31395f00040800000000000000
+      internalID: 4611956030471301655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._85
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2349
+        width: 452
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 704e4a0e17f731790800000000000000
+      internalID: -7560559222347996153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._86
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 2349
+        width: 450
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b67996dca857e220800000000000000
+      internalID: 2515076416267712183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._87
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 2349
+        width: 449
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea931091f27277100800000000000000
+      internalID: 105596199502952878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._88
+      rect:
+        serializedVersion: 2
+        x: 1348
+        y: 2349
+        width: 449
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61cde9267a3d2a690800000000000000
+      internalID: -7592273305925657578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._89
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 2349
+        width: 448
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70aac3fb397c1ca70800000000000000
+      internalID: 8845570580514908679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2014
+        width: 452
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa1c25e9a805a7dd0800000000000000
+      internalID: -2487587287876845137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._91
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 2014
+        width: 446
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf758d7ae3144300800000000000000
+      internalID: 235334978379284407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._92
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 2014
+        width: 445
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b60001b7cc09550800000000000000
+      internalID: 6165652718791715667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._93
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 2014
+        width: 445
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78a036e5e5fcc50d0800000000000000
+      internalID: -3432640811745736057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._94
+      rect:
+        serializedVersion: 2
+        x: 1797
+        y: 2014
+        width: 448
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb8195643bfea82c0800000000000000
+      internalID: -4428463730307032898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._95
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1680
+        width: 446
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862f15f1251164840800000000000000
+      internalID: 5207869063511011944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._96
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1681
+        width: 446
+        height: 329
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b0eeec626a9dd60800000000000000
+      internalID: 7915540505691032460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._97
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1680
+        width: 445
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e842360840430c0800000000000000
+      internalID: -4597044370172768736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._98
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1680
+        width: 445
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc4237fe8983be50800000000000000
+      internalID: 6823949107522063550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._99
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 1680
+        width: 442
+        height: 330
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62f3fc1b603f348f0800000000000000
+      internalID: -557334718785306842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._100
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1347
+        width: 446
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804e3c8b9a497dbb0800000000000000
+      internalID: -4911293411954007032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._101
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1347
+        width: 445
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d199ea77ad15690800000000000000
+      internalID: -7615065287341564563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._102
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1347
+        width: 443
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f58846ada706d080800000000000000
+      internalID: -9163127949438188047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._103
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1347
+        width: 441
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d0bbb2f6ab86e00800000000000000
+      internalID: 1038284700746714429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._104
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 1347
+        width: 442
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ee8235834c7b0c0800000000000000
+      internalID: -4559960351496933803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._105
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1012
+        width: 442
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23c2594ddadbb6570800000000000000
+      internalID: 8461064879239146546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._106
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 1012
+        width: 441
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1600a3a2eeefb2040800000000000000
+      internalID: 4624069741290061921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._107
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1012
+        width: 441
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca5063b3dc8f906d0800000000000000
+      internalID: -3023612114457197140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._108
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 1012
+        width: 441
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba248976dbf66e390800000000000000
+      internalID: -7789415646213160277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._109
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 1012
+        width: 438
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 664442ea0620e3f20800000000000000
+      internalID: 3404160982600402022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._110
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 677
+        width: 442
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ea86b5adb4592000800000000000000
+      internalID: 11633647550892769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._111
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 677
+        width: 441
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 872d544268f182430800000000000000
+      internalID: 3758288550035313272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._112
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 677
+        width: 441
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d298b9f72e777820800000000000000
+      internalID: 2915937993904132824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._113
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 677
+        width: 437
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ea4db0f85c94d30800000000000000
+      internalID: 4416278127782964862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._114
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 677
+        width: 438
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572f69c9ef7af3860800000000000000
+      internalID: 7511907415467946613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._115
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 341
+        width: 442
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 803193444e260ce40800000000000000
+      internalID: 5674644263023481608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._116
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 341
+        width: 439
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e092ff4b35702ad20800000000000000
+      internalID: 3288198734034184462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._117
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 341
+        width: 437
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50a6c4c285bfd1c60800000000000000
+      internalID: 7790659286539725317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._118
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 341
+        width: 437
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91113f00a1a732220800000000000000
+      internalID: 2459944073578090777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._119
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 341
+        width: 438
+        height: 328
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde0d6d9ff044fe00800000000000000
+      internalID: 1077557677450399455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._120
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 6
+        width: 438
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9957ebe4626de23a0800000000000000
+      internalID: -6688172936580401767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._121
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 6
+        width: 437
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236c8f836c23c00f0800000000000000
+      internalID: -1149487977945577934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._122
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 6
+        width: 437
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e801813ad74dcc3c0800000000000000
+      internalID: -4337858704992366450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._123
+      rect:
+        serializedVersion: 2
+        x: 1352
+        y: 6
+        width: 437
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 540bfb2050467e070800000000000000
+      internalID: 8135581224551821381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: logo life line.._124
+      rect:
+        serializedVersion: 2
+        x: 1801
+        y: 6
+        width: 434
+        height: 327
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e043b6dc36ab15ba0800000000000000
+      internalID: -6101891082299427826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ad681a87fed374be9986d95441568ef6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
