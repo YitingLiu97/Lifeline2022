@@ -214,6 +214,7 @@ public class Bubble : MonoBehaviour
     /// 
     public float radius = 20f;
     public float floorPosition = -2f;
+    public float momentMoveThreshold = .04f;
     void CreateBubbles()
     {
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
@@ -229,16 +230,22 @@ public class Bubble : MonoBehaviour
             bubblePrefabs.Add(go);
             bubblePrefabs[i].transform.Find("CategorySelections/People").gameObject.name += " " + go.name;
             bubblePrefabs[i].transform.Find("CategorySelections/Emotions").gameObject.name += " " + go.name;
+
+            Moment moment = go.GetComponent<Moment>();
+
+            moment.SetMoving(false);
+            moment.SetSpeed(bubbleTransitionSpeed);
+            moment.moveThreshold = momentMoveThreshold;
         }
 
-        SetBubblesPositions();
+        SendBubblesToGraphPosition();
 
     }
 
-    public float bubbleTransitionSpeed = 2;
+    public float bubbleTransitionSpeed = 1f;
     // should map the age to the timeline and set the transform for the bubble individually     
     // assign that to the position of the bubble in the world 
-    void SetBubblesPositions()
+    void SendBubblesToGraphPosition()
     {
         //Start highest age at 0
         int highestAge = 0;
@@ -271,6 +278,8 @@ public class Bubble : MonoBehaviour
         //loop through all bubble data
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
         {
+            Moment currentMoment = bubblePrefabs[i].gameObject.GetComponent<Moment>();
+
             // Positions are calculated by age/impact multiplied by increments
             float xPosition = abData.bubbleDatas[i].age * xIncrement;
             float yPosition = abData.bubbleDatas[i].impactValue * yIncrement;
@@ -280,33 +289,13 @@ public class Bubble : MonoBehaviour
 
             newPosition += GraphManager.Instance.yAxis.transform.position;
 
-            //set bubble position, TODO: coroutine to LERP
-            //bubblePrefabs[i].transform.position = newPosition;
-            StartCoroutine(MoveBubbleToPosition(bubblePrefabs[i], newPosition));
+            //set bubble position
+            currentMoment.SetNextPosition(newPosition);
+            currentMoment.SetMoving(true);
+
         }
-    }
-    
-    //Coroutine to move bubble slowly to position
-    IEnumerator MoveBubbleToPosition(GameObject bubbleToMove, Vector3 endPosition)
-    {
-        Debug.Log("Starting coroutine");
+    }    
 
-        Vector3 startPosition = bubbleToMove.transform.position;
-
-        // while distance between start position and end position is not equal
-        while (Math.Abs(Vector3.Distance(startPosition, endPosition)) > bubbleTransitionSpeed)
-        {
-            bubbleToMove.transform.position = Vector3.Lerp(startPosition, endPosition, Time.deltaTime * bubbleTransitionSpeed);
-
-            if(Math.Abs(Vector3.Distance(startPosition, endPosition)) <= bubbleTransitionSpeed)
-            {
-                bubbleToMove.transform.position = endPosition;
-                //StopCoroutine("MoveBubbleToPosition");
-            }
-
-            yield return null;
-        }
-    }
 
     float MapToZeroToOne(float originalValue, float maxValue)
     {
