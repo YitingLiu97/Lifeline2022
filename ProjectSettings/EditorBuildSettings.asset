@@ -8,9 +8,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Samples/Mixed Reality Toolkit Examples/2.7.3/Demos - UX/Slider/Scenes/SliderExample.unity
     guid: 086aad2912678d04e968264b2398004b
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/MasterScene.unity
     guid: edc5ee48deca4e541a18fddf52dcdf64
+  - enabled: 1
+    path: Assets/_Scenes/MasterScene_Yiting.unity
+    guid: 5c57973d7762ac1449ce2c4770f34328
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 066b420bd9b86d04d8f24f0c43215ad8, type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 918c6d8915bb36f4791a2a1b53c13066, type: 2}

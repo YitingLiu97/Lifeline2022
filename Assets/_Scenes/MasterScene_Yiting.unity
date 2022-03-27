@@ -228,8 +228,8 @@ GameObject:
   - component: {fileID: 247691525}
   - component: {fileID: 247691530}
   - component: {fileID: 247691529}
-  - component: {fileID: 247691528}
   - component: {fileID: 247691531}
+  - component: {fileID: 247691528}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -920,7 +920,15 @@ PrefabInstance:
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ToggleChair, Assembly-CSharp
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2754768371056040153, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+    - {fileID: 4864323167010936536, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+    - {fileID: 2722896807957518649, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+    - {fileID: 831020804167472753, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+    - {fileID: 2722896808009479963, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+    - {fileID: 7940701690346969200, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+    - {fileID: 7908392522188396944, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
+    - {fileID: 7908392522270668722, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 14b2f904c012f204b94aa960a991840e, type: 3}
 --- !u!114 &792347941 stripped
 MonoBehaviour:
@@ -1134,7 +1142,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7675920658124928016, guid: c5faa6428f3104946bad5131738590ef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.43
+      value: 3.965
       objectReference: {fileID: 0}
     - target: {fileID: 7675920658124928016, guid: c5faa6428f3104946bad5131738590ef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1176,6 +1184,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: BreathingText
       objectReference: {fileID: 0}
+    - target: {fileID: 7675920658124928046, guid: c5faa6428f3104946bad5131738590ef, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 7675920658124928047, guid: c5faa6428f3104946bad5131738590ef, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
+    - target: {fileID: 7675920658124928047, guid: c5faa6428f3104946bad5131738590ef, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 2180264, guid: 2e498d1c8094910479dc3e1b768306a4, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5faa6428f3104946bad5131738590ef, type: 3}
 --- !u!224 &1089416592 stripped
@@ -1278,7 +1298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83d9acc7968244a8886f3af591305bcb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeProfile: {fileID: 11400000, guid: 31a611a779d3499e8e35f1a2018ca841, type: 2}
+  activeProfile: {fileID: 11400000, guid: f8504e93e727c5947aa95e5800a915df, type: 2}
 --- !u!4 &1326793870
 Transform:
   m_ObjectHideFlags: 0
