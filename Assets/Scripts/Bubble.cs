@@ -243,6 +243,12 @@ public class Bubble : MonoBehaviour
         //calc distance between intensity amounts
         float yIncrement = yAxisLength / GraphManager.Instance.intensityScale;
 
+        //get the length of y axis based on capsule collider
+        float zAxisLength = GraphManager.Instance.zTop.position.z - GraphManager.Instance.zBottom.position.z;
+
+        //calc distance between intensity amounts
+        float zIncrement = zAxisLength / GraphManager.Instance.intensityScale;
+
 
         //loop through all bubble data
         for (int i = 0; i < abData.bubbleDatas.Count; i++)
@@ -252,9 +258,10 @@ public class Bubble : MonoBehaviour
             // Positions are calculated by age/impact multiplied by increments
             float xPosition = (abData.bubbleDatas[i].age-5) * xIncrement;
             float yPosition = abData.bubbleDatas[i].impactValue * yIncrement;
+            float zPosition = abData.bubbleDatas[i].physicalWellbeing * zIncrement;
 
             //create position, z is 0
-            Vector3 newPosition = new Vector3(xPosition, yPosition, 0);
+            Vector3 newPosition = new Vector3(xPosition, yPosition, zPosition);
 
             newPosition += GraphManager.Instance.yAxis.transform.position;
 
